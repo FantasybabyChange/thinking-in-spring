@@ -1,4 +1,4 @@
-@startuml SPRING_CLOUD_STUDY_MODULE
+@startuml Spring Programming Module
 !theme sketchy-outline
 title Spring 编程模型
 skinparam interface {
