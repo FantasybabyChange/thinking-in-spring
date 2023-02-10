@@ -44,4 +44,26 @@
 
 ## **面向切面**
  [AopProxy](https://github.com/spring-projects/spring-framework/blob/main/spring-aop/src/main/java/org/springframework/aop/framework/AopProxy.java)
+ ### **1.动态代理**
 经典动态代理实现[JdkDynamicAopProxy](https://github.com/spring-projects/spring-framework/blob/main/spring-aop/src/main/java/org/springframework/aop/framework/JdkDynamicAopProxy.java)
+### **2.cglib**
+[CglibAopProxy](https://github.com/spring-projects/spring-framework/blob/main/spring-aop/src/main/java/org/springframework/aop/framework/CglibAopProxy.java)将 cglib 
+[Enhancer](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/cglib/proxy/Enhancer.java) Asm等内联
+
+## 面向元编程
+### **模式注解**
+ 基于DDD引出的概念  
+  [Component](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/stereotype/Component.java)
+  可以使用[ComponentScan ](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/ComponentScan.java)扫描
+  Component的派生   @Service @Repository
+  ### **配置**
+  Environment  profiles  
+  PropertyResolver  getProperty   PropertySource
+  ### **泛型**
+  GenericTypeResolver
+
+  ResolvableType 将Map泛型的类型找出   
+  ParameterizedType java 提供的api 不太好用
+  ## 函数驱动
+  ### 函数接口
+  ## 模块驱动
