@@ -1,0 +1,52 @@
+@startmindmap Spring Design Pattern
+!theme sketchy
+<style>
+mindmapDiagram {
+    :depth(0) {
+        BackGroundColor red
+    }
+    node {
+        BackgroundColor PowDerBlue
+    }
+    :depth(1) {
+        BackGroundColor DarkSlateBlue
+    }
+    :depth(2) {
+        BackGroundColor RoyalBlue
+    }
+}
+</style>
+
+title  设计模式
++[#SlateGray] 传统GoF 23
+++ 创建模式
++++ 抽象工厂(Abstract Factory)
++++ 构建器(Builder)
++++ 工厂方法(Factory Method)
++++ 原型(Prototype)
++++ 单体(Singleton)
+
+++[#CornflowerBlue] 结构模式
++++ 适配器(Adapter)
++++ 桥接(Bridge)
++++ 组合(Composite)
++++ 装饰器(Decorator)
++++ 门面(Facade)
++++ 轻量级(Flyweight)
++++ 代理(Proxy)
+
+--[#SteelBlue] 行为模式
+--- 责任链(Chain of Responsibility)
+--- 命令(Command)
+--- 拦截器(Interpreter)
+--- 迭代器(Iterator)
+--- 调节者(Mediator)
+--- 备忘(Memento)
+--- 观察者(Observer)
+--- 状态(State)
+--- 策略(Strategy)
+--- 模板方法(Template Method)
+--- 访问者(Visitor)
+
+
+@endmindmap
