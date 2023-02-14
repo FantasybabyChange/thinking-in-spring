@@ -57,13 +57,24 @@
   可以使用[ComponentScan ](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/ComponentScan.java)扫描
   Component的派生   @Service @Repository
   ### **配置**
-  Environment  profiles  
-  PropertyResolver  getProperty   PropertySource
-  ### **泛型**
-  GenericTypeResolver
+  [Environment](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/core/env/Environment.java)  profiles  根据配置对系统进行区分.
 
-  ResolvableType 将Map泛型的类型找出   
-  ParameterizedType java 提供的api 不太好用
+  属性:  
+  [PropertyResolver](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/core/env/PropertyResolver.java)   getProperty   
+  数据源:  
+  [PropertySource](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/core/env/PropertySource.java) 
+  ### **泛型**
+  [GenericTypeResolver](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/core/GenericTypeResolver.java)  引用java5里面的反射api  
+  [ResolvableType](https://github.com/spring-projects/spring-framework/blob/main/spring-core/src/main/java/org/springframework/core/ResolvableType.java)  将Map泛型的类型找出,简化泛型操作  
+  [ParameterizedType](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/lang/reflect/ParameterizedType.java) java 提供的api 不太好用
   ## 函数驱动
   ### 函数接口
+  [FunctionalInterface](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/lang/FunctionalInterface.java)有且只有一个抽象方法  
+  比如: 
+  [ApplicationListener](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/ApplicationListener.java)
+
+  **WebFlux** : 引入webflux后会引入 reactor-core 框架 提供 [Mono](https://github.com/reactor/reactor-core/blob/main/reactor-core/src/main/java/reactor/core/publisher/Mono.java) 和 [Flux](https://github.com/reactor/reactor-core/blob/main/reactor-core/src/main/java/reactor/core/publisher/Flux.java)
+
   ## 模块驱动
+
+@Enable 激活一匹对应模块
