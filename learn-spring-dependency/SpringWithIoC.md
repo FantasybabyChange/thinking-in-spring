@@ -32,3 +32,11 @@
 ### Spring实现IOC的主要策略
 * 依赖查找(Dependency Lookup): 容器提供一个回调给组件, 并且给一个 上下文查找(lookup context). EJB和apache Avalon 实现了这种模式. 这让每个组件都有责任使用 容器的API来查看资源和协作者. 控制反转局限于 容器调用 回调方法,应用程序代码可以用来获取资源
 * 依赖注入(Dependency Injection): 组件不查找,他们提供Java 方法来让容器解决以来. 容器对于组件连接负全责. 将对应的对象传给 JavaBean属性或者构造器. 通过JavaBean属性 叫做Setter 注入,使用构造器参数的叫做构造器注入.
+
+### Ioc设计目的
+根据 [wiki](https://en.wikipedia.org/wiki/Inversion_of_control)  
+Ioc 的设计目的
+* 将任务的执行和实现分离出来
+* 关注于设计这个任务的模块本身.
+* 从猜测别的系统怎么做他们的实现解放模块,使用 合约替换猜测
+* 解耦 防止更换模块时产生的副作用.

@@ -6,3 +6,4 @@
 ##相关学习
 
 1. [Spring 编程模块](/learn-spring-dependency/SpringProgramingModel.md)
+2. [Spring 与Ioc 基础](/learn-spring-dependency/SpringWithIoC.md)
