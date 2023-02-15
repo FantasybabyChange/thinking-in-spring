@@ -1,5 +1,4 @@
 @startmindmap Spring Design Pattern
-!theme sketchy
 <style>
 mindmapDiagram {
     :depth(0) {
@@ -17,36 +16,23 @@ mindmapDiagram {
 }
 </style>
 
-title  设计模式
-+[#SlateGray] 设计模式
+title  Spring设计模式
++[#SlateGray] Spring设计模式
 ++ 传统GoF 23
-+++ 创建模式
-++++ 抽象工厂(Abstract Factory)
-++++ 构建器(Builder)
-++++ 工厂方法(Factory Method)
-++++ 原型(Prototype)
-++++ 单体(Singleton)
-
-+++[#CornflowerBlue] 结构模式
-++++ 适配器(Adapter)
-++++ 桥接(Bridge)
-++++ 组合(Composite)
-++++ 装饰器(Decorator)
-++++ 门面(Facade)
-++++ 轻量级(Flyweight)
-++++ 代理(Proxy)
-+++[#SteelBlue] 行为模式
-++++ 责任链(Chain of Responsibility)
-++++ 命令(Command)
-++++ 拦截器(Interpreter)
-++++ 迭代器(Iterator)
-++++ 调节者(Mediator)
-++++ 备忘(Memento)
-++++ 观察者(Observer)
-++++ 状态(State)
-++++ 策略(Strategy)
-++++ 模板方法(Template Method)
-++++ 访问者(Visitor)
-
+-- Spring专属设计模式
+---[#SteelBlue]  前缀模式
+---- Enable模式
+---- Configurable模式
+---[#CornflowerBlue] 后缀模式
+---- 处理模式
+-----_ Processor
+-----_ Resolver
+-----_ Handler
+---- 意识模式
+-----_ Aware
+---- 配置器模式
+-----_ Configuror
+---- 选择器模式
+-----_ context.annotation
 
 @endmindmap
