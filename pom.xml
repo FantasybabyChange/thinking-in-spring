@@ -16,6 +16,8 @@
 
     <modules>
         <module>learn-spring-dependency</module>
+        <module>learn-ioc</module>
+        <module>java-beans-ioc</module>
     </modules>
     <dependencyManagement>
         <dependencies>

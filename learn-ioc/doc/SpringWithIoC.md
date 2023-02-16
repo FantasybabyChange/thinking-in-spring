@@ -40,3 +40,29 @@ Ioc 的设计目的
 * 关注于设计这个任务的模块本身.
 * 从猜测别的系统怎么做他们的实现解放模块,使用 合约替换猜测
 * 解耦 防止更换模块时产生的副作用.
+### Spring中IoC容器的职责
+通用职责
+* 依赖处理
+  * 依赖查找
+  * 依赖注入
+* 生命周期管理
+  * 容器 自生的创建 启动 停止 暂停 销毁等
+  * 托管的资源(Java Beans 或其他资源 比如事件)
+* 配置
+	* 容器自身配置
+	* 外部化配置
+	* 托管的资源(Java Beans 或其他资源)
+  
+### IoC容器的实现
+* JavaSe
+  * Java Beans
+  * Java ServiceLoader SPI
+  * JNDI
+* Java EE
+  * EJB(Enterprise Java Beans)
+  * Servlet
+* 开源
+  * ~~[Apache Avalon](http://avalon.apache.org/closed.html)~~ 已经没了
+  * [PicoContainer](http://picocontainer.com/)
+  * [Google Guice](https://github.com/google/guice)
+  * [Spring Framework](https://spring.io/projects/spring-framework)

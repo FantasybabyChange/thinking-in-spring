@@ -5,5 +5,7 @@
 [文档](https://docs.spring.io/spring-framework/docs/current/reference/html/) 进行学习
 ##相关学习
 
-1. [Spring 编程模块](/learn-spring-dependency/SpringProgramingModel.md)
-2. [Spring 与Ioc 基础](/learn-spring-dependency/SpringWithIoC.md)
+1. [Spring 编程模块](/learn-spring-dependency/SpringProgramingModel.md)  
+### Ioc相关
+1. [Spring 与Ioc 基础](/learn-ioc/doc/SpringWithIoC.md)
+2. [java bean的ioc支持](/learn-ioc/doc/iocJavaBean.md)
