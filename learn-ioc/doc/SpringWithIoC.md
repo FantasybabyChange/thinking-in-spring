@@ -66,3 +66,6 @@ Ioc 的设计目的
   * [PicoContainer](http://picocontainer.com/)
   * [Google Guice](https://github.com/google/guice)
   * [Spring Framework](https://spring.io/projects/spring-framework)
+
+
+[javaBean作为Ioc容器]
