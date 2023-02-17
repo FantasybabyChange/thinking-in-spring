@@ -40,6 +40,16 @@ Ioc 的设计目的
 * 关注于设计这个任务的模块本身.
 * 从猜测别的系统怎么做他们的实现解放模块,使用 合约替换猜测
 * 解耦 防止更换模块时产生的副作用.
+### 轻量级Ioc容器
+
+
+#### **轻量级Ioc容器好处**
+* Escaping the monolithic container(远离集中式容器 比如微服务)
+* Maximizing code reusability(最大代码可重用)
+* Greater object orientation(面向对象)
+* Greater productivity(更大产品化)
+* Better testability(Spring 使用junit 单元测试配合集成测试)
+
 ### Spring中IoC容器的职责
 通用职责
 * 依赖处理
@@ -68,4 +78,4 @@ Ioc 的设计目的
   * [Spring Framework](https://spring.io/projects/spring-framework)
 
 
-[javaBean作为Ioc容器]
+[javaBean作为Ioc容器](../doc/iocJavaBean.md)

@@ -13,6 +13,7 @@
 [BeanContext](https://docs.oracle.com/javase/8/docs/technotes/guides/beans/spec/beancontext.html)
 
 **Introspector** 通过 **getBeanInfo** 方法获取Bean的信息
+**PropertyDescriptor** 通过 **setPropertyEditorClass** 设置类型转换的类
 ```java
     BeanInfo beanInfo = Introspector.getBeanInfo(PersonPojo.class,Object.class);
 
