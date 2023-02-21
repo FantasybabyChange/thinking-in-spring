@@ -84,3 +84,4 @@ Ioc 的设计目的
 
 
 [javaBean作为Ioc容器](../doc/iocJavaBean.md)
+[依赖查找以及注入](../doc/di_lookup.md)
