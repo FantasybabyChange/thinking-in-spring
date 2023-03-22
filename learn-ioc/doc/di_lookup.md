@@ -21,7 +21,7 @@
    * 有对应的Getter可以获取到属性的状态, 如果使用构造器注入则不能很好的查看状态
    * Setter 也同样适用于有默认值的对象,这意味着不是所有属性需要实时提供  
 **缺点**
-   * Setter的顺序没有办法约束  Srping提供了[InitializingBean](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/InitializingBean.java)能够调用任意的初始方法,不过这个必须有在文档上约定,以防超出容器外.  
+   * Setter的顺序没有办法约束  Srping提供了 [InitializingBean](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/InitializingBean.java) 能够调用任意的初始方法,不过这个必须有在文档上约定,以防超出容器外.  
 1. 构造器注入  
 **优点**    
     * 在调用前是一个确定的状态. 
