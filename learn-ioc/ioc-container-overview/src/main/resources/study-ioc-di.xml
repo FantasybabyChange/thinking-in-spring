@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <import resource="classpath:/study-ioc-lookup.xml"/>
+    <!--手动添加bean -->
+  <!--  <bean name="userRepository" class="com.fantasybaby.spring.ioc.overview.repository.UserRepository">
+        <property name="users">
+
+            <list>
+                <ref   bean="user1"/>
+                <ref   bean="user2"/>
+            </list>
+        </property>
+    </bean>-->
+    <!-- 使用auto wire-->
+    <bean name="userRepository" class="com.fantasybaby.spring.ioc.overview.repository.UserRepository" autowire="byType">
+    </bean>
+</beans>

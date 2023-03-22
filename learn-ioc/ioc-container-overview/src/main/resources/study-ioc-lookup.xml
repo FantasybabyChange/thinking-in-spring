@@ -4,7 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="user" name="user" class="com.fantasybaby.spring.ioc.overview.model.User" >
         <property name="age" value="2"/>
-        <property name="name" value="aa"/>
+        <property name="name" value="fantasybaby"/>
+    </bean>
+
+    <bean id="user1" name="user1" class="com.fantasybaby.spring.ioc.overview.model.User" >
+        <property name="age" value="4"/>
+        <property name="name" value="clark"/>
+    </bean>
+
+    <bean id="user2" name="user2" class="com.fantasybaby.spring.ioc.overview.model.VipUser" >
+        <property name="age" value="32"/>
+        <property name="name" value="chuanGod"/>
+        <property name="pay" value="2200"/>
     </bean>
     <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
         <property name="targetBeanName" value="user"/>
