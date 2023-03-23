@@ -1,14 +1,9 @@
 package com.fantasybaby.spring.ioc.overview;
 
 import com.fantasybaby.spring.ioc.overview.model.User;
-import com.fantasybaby.spring.ioc.overview.model.UserLook;
 import com.fantasybaby.spring.ioc.overview.repository.UserRepository;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.Map;
 
 /**
  * 简单看看依赖注入
@@ -25,10 +20,23 @@ public class SpringIocDiView {
 
         UserRepository userRepository = (UserRepository) beanFactory.getBean("userRepository");
         beanFactory.getBean("userRepository");
+
+
         System.out.println("获取注入的User" + userRepository.getUsers());
 
 
-        System.out.println("beanFactory== user.beanFactory" + (beanFactory == userRepository.getBeanFactory()));
+        System.out.println(beanFactory);
+
+        System.out.println(userRepository.getBeanFactory());
+        /**
+         * 依赖注入和依赖查找的bean不相同
+         */
+        System.out.println("beanFactory== user.beanFactory " + (beanFactory == userRepository.getBeanFactory()));
+
+        ObjectFactory<User> userFactory = userRepository.getUser1ObjectFactory();
+        System.out.println(userFactory.getObject());
+
+        System.out.println("beanFactory和注入的context 是否相等 "+(userRepository.getApplicationContextObjectFactory().getObject() == beanFactory));
 
     }
 
