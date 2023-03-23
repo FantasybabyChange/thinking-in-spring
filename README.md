@@ -13,3 +13,4 @@ jdk:17
 3. [java bean的ioc支持](/learn-ioc/doc/iocJavaBean.md)
 4. [Spring 与Ioc](/learn-ioc/doc/SpringWithIoC.md)
    1. [Spring依赖查找](/learn-ioc/doc/SpringDL.md)
+   2. [Spring依赖注入](/learn-ioc/doc/SpringDI.md)

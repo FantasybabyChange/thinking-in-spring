@@ -4,6 +4,7 @@ import com.fantasybaby.spring.ioc.overview.model.User;
 import com.fantasybaby.spring.ioc.overview.repository.UserRepository;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.env.Environment;
 
 /**
  * 简单看看依赖注入
@@ -17,7 +18,7 @@ public class SpringIocDiView {
          * 通过xml配置文件获取Spring上下文
          */
         var beanFactory = new ClassPathXmlApplicationContext("classpath:/study-ioc-di.xml");
-
+        //获取自定义bean
         UserRepository userRepository = (UserRepository) beanFactory.getBean("userRepository");
         beanFactory.getBean("userRepository");
 
@@ -26,7 +27,7 @@ public class SpringIocDiView {
 
 
         System.out.println(beanFactory);
-
+        // 获取依赖创建的bean
         System.out.println(userRepository.getBeanFactory());
         /**
          * 依赖注入和依赖查找的bean不相同
@@ -37,6 +38,9 @@ public class SpringIocDiView {
         System.out.println(userFactory.getObject());
 
         System.out.println("beanFactory和注入的context 是否相等 "+(userRepository.getApplicationContextObjectFactory().getObject() == beanFactory));
+
+        Environment bean = beanFactory.getBean(Environment.class);
+        System.out.println("系统自建的bean" + bean);
 
     }
 
