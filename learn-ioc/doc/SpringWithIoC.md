@@ -17,9 +17,9 @@
 	* 托管的资源(Java Beans 或其他资源)
   
 ### **Spring依赖查找以及依赖注入**
-* [Spring依赖查找](spring/SpringDL.md)  
-* [Spring依赖注入](spring/SpringDI.md)
-* [IOC的一些问题](spring/SpringIOCQuestions.md)
+* [Spring依赖查找](springioc/SpringDL.md)  
+* [Spring依赖注入](springioc/SpringDI.md)
+* [IOC的一些问题](springioc/SpringIOCQuestions.md)
 #### **Ioc依赖来源**
 相关[代码来自]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocDiView.java))
 * 自定义Bean
