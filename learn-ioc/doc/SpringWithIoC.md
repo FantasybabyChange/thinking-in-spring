@@ -17,8 +17,9 @@
 	* 托管的资源(Java Beans 或其他资源)
   
 ### **Spring依赖查找以及依赖注入**
-* [Spring依赖查找](SpringDL.md)  
-* [Spring依赖注入](SpringDI.md)
+* [Spring依赖查找](spring/SpringDL.md)  
+* [Spring依赖注入](spring/SpringDI.md)
+* [IOC的一些问题](spring/SpringIOCQuestions.md)
 #### **Ioc依赖来源**
 相关[代码来自]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocDiView.java))
 * 自定义Bean
@@ -50,3 +51,16 @@ Environment bean = beanFactory.getBean(Environment.class);
 *   基于 Java API （专题讨论）
 * 外部化属性配置
   * 基于 Java 注解
+
+## **Spring中的Ioc容器**
+[文档链接](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction)
+
+包**org.springframework.beans** 和 **org.springframework.context** 是Spring Ioc容器的基础.  
+**BeanFactory** 接口提供了能够管理任何类型对象的高级配置机制  
+**ApplicationContext** 是一个BeanFactory的子接口
+  * 更简单的整合 Spring的Aop特性
+  * 消息资源源处理(对国际化使用)
+  * 时间发布
+  * 应用层特定的上下文, 比如[WebApplicaionContext](https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/context/WebApplicationContext.java) 对于web application使用  
+  
+总而言之 BeanFactory提供了可配置框架和基础的功能.而 ApplicationContext添加了更多企业特定的功能. ApplicationContext是一个BeanFactory完整的扩展集。  

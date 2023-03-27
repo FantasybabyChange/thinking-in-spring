@@ -28,9 +28,12 @@ public class SpringIocDiView {
 
         System.out.println(beanFactory);
         // 获取依赖创建的bean
+        /**
+         * DefaultListableBeanFactory 为组合中的对象 {@link org.springframework.context.support.AbstractRefreshableConfigApplicationContext}
+         */
         System.out.println(userRepository.getBeanFactory());
         /**
-         * 依赖注入和依赖查找的bean不相同
+         * 依赖注入和依赖查找的bean不相同  beanFactory为context   di中的对象为组合的对象
          */
         System.out.println("beanFactory== user.beanFactory " + (beanFactory == userRepository.getBeanFactory()));
 
