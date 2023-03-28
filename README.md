@@ -14,3 +14,4 @@ jdk:17
 4. [Spring 与Ioc](/learn-ioc/doc/SpringWithIoC.md)
    1. [Spring依赖查找](/learn-ioc/doc/SpringDL.md)
    2. [Spring依赖注入](/learn-ioc/doc/SpringDI.md)
+   3. [IOC相关问题](/learn-ioc/doc/springioc/SpringIOCQuestions.md)

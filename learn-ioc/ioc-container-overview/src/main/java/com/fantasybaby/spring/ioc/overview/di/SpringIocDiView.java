@@ -1,4 +1,4 @@
-package com.fantasybaby.spring.ioc.overview;
+package com.fantasybaby.spring.ioc.overview.di;
 
 import com.fantasybaby.spring.ioc.overview.model.User;
 import com.fantasybaby.spring.ioc.overview.repository.UserRepository;
