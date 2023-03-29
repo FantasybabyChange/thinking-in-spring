@@ -1,0 +1,64 @@
+@startuml APPLICAIONCONTEXT-START-WORKFLOW
+title applicaioncontext start workflow
+!theme sketchy-outline
+start
+:AbstractApplicationContext:refresh();
+:synchronized(startupShutdownMonitor);
+note left
+    对于"refresh"的"destroy"的同步锁.
+end note
+:DefaultApplicationStartup:start();
+:AbstractApplicationContext:prepareRefresh();
+:AbstractApplicationContext: prepareRefresh();
+note left
+  Spring bean 对象和非Spring bean对象
+end note
+partition prepareRefresh{
+:设置相应状态;
+:initPropertySources();
+note right
+ 初始化属性资源
+ Initialize any placeholder property sources in the context environment.
+end note
+:validateRequiredProperties();
+note right
+ 校验需要的属性
+ Validate that all properties marked as required are resolvable
+end note
+}
+:obtainFreshBeanFactory;
+note left
+Tell the subclass to refresh the internal bean factory
+end note
+:prepareBeanFactory;
+note left
+Prepare the bean factory for use in this context.
+end note
+:postProcessBeanFactory;
+note right
+Allows post-processing of the bean factory in context subclasses.
+end note
+partition post-process-bean {
+:invokeBeanFactoryPostProcessors(beanFactory);
+note right
+Invoke factory processors registered as beans in the context.
+end note
+:registerBeanPostProcessors(beanFactory);
+note right
+Register bean processors that intercept bean creation.
+end note
+}
+:initMessageSource;
+note left
+ Initialize message source for this context.
+end note
+:initApplicationEventMulticaster;
+:onRefresh;
+:registerListeners;
+:finishBeanFactoryInitialization;
+note left 
+Instantiate all remaining (non-lazy-init) singletons.
+end note 
+:finishRefresh;
+:resetCommonCaches;
+@enduml
