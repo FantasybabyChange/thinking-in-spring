@@ -62,5 +62,10 @@ Environment bean = beanFactory.getBean(Environment.class);
   * 消息资源源处理(对国际化使用)
   * 时间发布
   * 应用层特定的上下文, 比如[WebApplicaionContext](https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/context/WebApplicationContext.java) 对于web application使用  
+  * 配置元信息(Configuration Metadata)
+  * 资源管理(Resources)
+  * 注解(Annotations)
+  * Environment 抽象(Environment Abstraction)
   
 总而言之 BeanFactory提供了可配置框架和基础的功能.而 ApplicationContext添加了更多企业特定的功能. ApplicationContext是一个BeanFactory完整的扩展集。  
+[applicationContext作为容器详解](springioc/applicationContextIocContainer.md)
