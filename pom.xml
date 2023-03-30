@@ -18,6 +18,7 @@
     <modules>
         <module>learn-spring-dependency</module>
         <module>learn-ioc</module>
+        <module>learn-spring-beans</module>
     </modules>
     <dependencyManagement>
         <dependencies>
