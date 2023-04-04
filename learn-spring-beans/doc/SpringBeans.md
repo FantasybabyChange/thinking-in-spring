@@ -2,6 +2,7 @@
 ## **Bean的概念**
  **非Bean**: 非Spring 管理的bean.  
 ## **Spring Bean的命名**
+
 ## **BeanDefinition**
  **BeanDefinition**: [BeanDefinition](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/BeanDefinition.java) 是 Spring Framework 中定义 Bean 的配置元信息接口，包含：  
 * Bean 的类名
