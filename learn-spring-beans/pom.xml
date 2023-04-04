@@ -12,9 +12,15 @@
     <name>learn-spring-beans</name>
     <packaging>pom</packaging>
     <modules>
-
+        <module>spring-beans-overview</module>
     </modules>
-    <dependencies>
-        
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>ioc-container-overview</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

@@ -3,15 +3,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>learn-ioc</artifactId>
+        <artifactId>learn-spring-beans</artifactId>
         <groupId>com.fantasybaby</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ioc-container-overview</artifactId>
+    <artifactId>spring-beans-overview</artifactId>
 
-    <name>ioc-container-overview</name>
+    <name>spring-beans-overview</name>
 
 
     <dependencies>
@@ -19,7 +19,10 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>ioc-container-overview</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
