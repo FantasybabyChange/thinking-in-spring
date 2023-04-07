@@ -84,7 +84,19 @@ Bean 别名（Alias）的价值
  * 通过[AbstractBeanDefinition](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java)以及相关派生类  
 [**相关代码**](../spring-beans-overview/src/main/java/com/fantasybaby/spring/beans/overview/BeanDefinitionBuildDemo.java)
 
-
+### **BeanDefinition的注册**
+1. XML 使用 <Bean name /> 标签  
+	使用Annotation MetaData
+2. 使用注解
+  AnnotationConfigApplicationContext.register 注册配置类
+   * @Bean
+   * @Import
+   * @Component
+3. 使用api注册
+   * 命名方式BeanDefinitionRegistry.registerBeanDefinition(String, BeanDefinition)
+   * 非命名方式org.springframework.beans.factory.support.
+   * BeanDefinitionReaderUtils.registerWithGeneratedName(AbstractBeanDefinition, BeanDefinitionRegistry)
+配置类方式org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(Class[])
 ## **FactoryBean**
  Interface to be implemented by objects used within a BeanFactory which are themselves factories for individual objects. If a bean implements this interface, it is used as a factory for an object to expose, not directly as a bean instance that will be exposed itself.  
  解决复杂的构造场景.  
