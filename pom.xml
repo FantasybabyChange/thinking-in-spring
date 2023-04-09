@@ -11,7 +11,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
         <java.version>17</java.version>
-        <org.spring.version>6.0.4</org.spring.version>
+        <org.spring.version>6.0.7</org.spring.version>
         <lombok.verion>1.18.26</lombok.verion>
     </properties>
 
