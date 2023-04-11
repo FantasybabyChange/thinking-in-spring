@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--通过静态方法创建bean -->
+        <bean id="bean-static-method" class="com.fantasybaby.spring.beans.overview.instantiation.Music" factory-method="createMusic"/>
+
+        <!--通过实例方法 抽象工厂创建 -->
+        <bean id="bean-instance-method" class="com.fantasybaby.spring.beans.overview.instantiation.Music" factory-bean="defaultMusicFactory" factory-method="createMusic" />
+        <bean id="defaultMusicFactory" class="com.fantasybaby.spring.beans.overview.instantiation.factory.DefaultMusicFactory"/>
+
+        <!-- factory bean 实例化-->
+        <bean id="bean-factory-bean" class="com.fantasybaby.spring.beans.overview.instantiation.factory.MusicFactoryBean"  />
+</beans>

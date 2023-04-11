@@ -16,3 +16,6 @@ jdk:17
    2. [Spring依赖注入](/learn-ioc/doc/SpringDI.md)
    3. [IOC相关问题](/learn-ioc/doc/springioc/SpringIOCQuestions.md)
 5. [Spring 与Beans](/learn-spring-beans/doc/SpringBeans.md)
+   1. [Spring Bean的命名](/learn-spring-beans/doc/bean_lifecyle/SpringBeanNaming.md)
+   2. [Srping bean的定义](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
+   3. [Srping bean的创建](/learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)

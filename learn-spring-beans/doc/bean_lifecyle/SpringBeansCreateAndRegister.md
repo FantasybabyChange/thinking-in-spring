@@ -16,3 +16,6 @@ Spring Bean有以下几种注册方式
    * 命名方式BeanDefinitionRegistry.registerBeanDefinition(String, BeanDefinition)
    * 非命名方式 org.springframework.beans.factory.support.BeanDefinitionReaderUtils.registerWithGeneratedName(AbstractBeanDefinition, BeanDefinitionRegistry)
    * 配置类方式 org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(Class[])
+   * 外部单例对象注册
+     * Java API 配置元信息
+     * SingletonBeanRegistry#registerSingleton
