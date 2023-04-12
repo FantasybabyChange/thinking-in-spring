@@ -9,9 +9,9 @@ import com.fantasybaby.spring.beans.overview.instantiation.Music;
  */
 public interface MusicFactory {
     /**
+     * 创作音乐
      * create music
      *
-     * @param name 名字
      * @return {@link Music}
      */
     Music createMusic();

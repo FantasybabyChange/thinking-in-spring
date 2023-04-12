@@ -31,7 +31,30 @@ Bean的实例化是在依赖注入的时候触发的
         <bean id="bean-factory-bean" class="com.fantasybaby.spring.beans.overview.instantiation.factory.MusicFactoryBean"  />
         ```
 2. 特殊方式
-    *  通过 ServiceLoaderFactoryBean（配置元信息：XML、Java 注解和 Java API ）
-        ServiceLoader是Java的一个传统的加载类
-    *  通过 AutowireCapableBeanFactory#createBean(java.lang.Class, int, boolean)
+    *  通过 ServiceLoaderFactoryBean（配置元信息：XML、Java 注解和 Java API ）  
+        [ServiceLoaderFactoryBean](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/serviceloader/ServiceLoaderFactoryBean.java)是用来适配ServiceLoader
+        [ServiceLoader](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/ServiceLoader.java)是Java的一个传统的加载类.  
+        1. 创建在该目录下创建文件文件
+            ``` java
+                    private static final String PREFIX = "META-INF/services/";
+            ```
+           ![文件地址](../pics/servicepath.png)
+        2.  用服务的实现为内容,可以为一个或者多个  
+           ![文件地址](../pics/fileContents.png)
+    *  通过 AutowireCapableBeanFactory#createBean(java.lang.Class, int, boolean)  
+        ```java
+                AutowireCapableBeanFactory autowireCapableBeanFactory = beanFactory.getAutowireCapableBeanFactory();
+                MusicFactory musicFactory = autowireCapableBeanFactory.createBean(DefaultMusicFactory.class);
+        ```
     *  通过 BeanDefinitionRegistry#registerBeanDefinition(String,BeanDefinition)
+        ```java  
+                AnnotationConfigApplicationContext registry;
+                registry.registerBeanDefinition(beanName, userBeanDefinition);
+        ```
+
+
+
+
+
+
+       
