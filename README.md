@@ -19,3 +19,4 @@ jdk:17
    1. [Spring Bean的命名](/learn-spring-beans/doc/bean_lifecyle/SpringBeanNaming.md)
    2. [Srping bean的定义](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
    3. [Srping bean的创建](/learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)
+   4. [Srping bean的实例化](/learn-spring-beans/doc/bean_lifecyle/SpringBeansInstantiation.md)

@@ -9,6 +9,8 @@
 [Spring bean definition](../doc/bean_lifecyle/SpringBeansDefinition.md)
 ### **Bean的实例化**  
 [Spring bean instantiation](../doc/bean_lifecyle/SpringBeansInstantiation.md)
+### **Bean的初始化**  
+[Spring bean instantiation](../doc/bean_lifecyle/SpringBeansInstantiation.md)
 ### **FactoryBean**
  Interface to be implemented by objects used within a BeanFactory which are themselves factories for individual objects. If a bean implements this interface, it is used as a factory for an object to expose, not directly as a bean instance that will be exposed itself.  
  解决复杂的构造场景.  
