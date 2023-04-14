@@ -23,9 +23,13 @@
             <groupId>${groupId}</groupId>
             <artifactId>ioc-container-overview</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
         </dependency>
     </dependencies>
 

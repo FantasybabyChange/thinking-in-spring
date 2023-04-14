@@ -1,0 +1,67 @@
+@startuml spring destroy bean
+title spring-destroy-bean
+!theme crt-amber
+participant AbstractApplicationContext  as aac  <<(C,#ADD1B2)>>
+participant LifecycleProcessor as lp <<(C,#ADD1B2)>> 
+participant DefaultListableBeanFactory as dlbf <<(C,#ADD1B2)>> 
+participant DefaultSingletonBeanRegistry as dsbr <<(C,#ADD1B2)>> 
+participant DisposableBeanAdapter as dba <<(C,#ADD1B2)>> 
+participant InitDestroyAnnotationBeanPostProcessor as idabp <<(C,#ADD1B2)>>
+participant DisposableBean as db
+activate aac
+aac->aac ++:close()
+aac->aac ++:doClose()
+aac->aac ++:publishEvent()
+aac-> lp ++:onClose()
+return 
+aac-> aac ++:destroyBeans()
+aac->dlbf ++:destroySingletons()
+dlbf->dsbr ++:destroySingletons()
+return
+dlbf->dlbf ++:destroySingleton()
+dlbf->dsbr ++:destroySingleton()
+dsbr->dsbr ++:removeSingleton()
+dsbr->dsbr ++: destroyBean()
+dsbr->dba ++: destroy()
+dba->idabp ++: postProcessBeforeDestruction()
+note left of idabp
+    这里调用 Bean @PreDestroy 指定的方法 方法
+end note
+return
+dba->db ++:destroy()
+note over of db
+    这里调用 DisposableBean 指定得 destory 方法
+end note
+return
+dba->dba ++:invokeCustomDestroyMethod()
+note over of dba
+    这里调用 自定义的 指定的 destory 方法
+end note
+dba--> dsbr
+deactivate dba
+deactivate dba
+dsbr-->dlbf
+deactivate dsbr
+deactivate dsbr
+deactivate dsbr
+dlbf->dlbf ++:updateManualSingletonNames()
+dlbf->dlbf ++:clearByTypeCache()
+dlbf --> aac
+deactivate dlbf
+deactivate dlbf
+deactivate dlbf
+
+aac->aac ++: closeBeanFactory()
+aac->aac ++: onClose()
+
+
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+destroy aac
+
+@enduml

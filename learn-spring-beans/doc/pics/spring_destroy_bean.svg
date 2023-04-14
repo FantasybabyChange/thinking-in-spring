@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1100px" preserveAspectRatio="none" style="width:1829px;height:1100px;background:#282828;" version="1.1" viewBox="0 0 1829 1100" width="1829px" zoomAndPan="magnify"><defs/><g><rect fill="#282828" height="36.7373" id="_title" style="stroke:#282828;stroke-width:0.0;" width="264" x="783.5" y="10"/><text fill="#FFB000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="254" x="788.5" y="37.1182">spring-destroy-bean</text><rect fill="#282828" height="942.585" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="130.5" y="95.7373"/><rect fill="#282828" height="912.7856" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="135.5" y="125.5366"/><rect fill="#282828" height="869.9863" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="140.5" y="168.3359"/><rect fill="#282828" height="827.187" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="145.5" y="211.1353"/><rect fill="#282828" height="740.5884" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="150.5" y="297.7339"/><rect fill="#282828" height="70.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="155.5" y="967.5229"/><rect fill="#282828" height="28" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="160.5" y="1010.3223"/><rect fill="#282828" height="14" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="358" y="245.9346"/><rect fill="#282828" height="721.7891" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="584" y="332.5332"/><rect fill="#282828" height="515.5918" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="589" y="414.1318"/><rect fill="#282828" height="61.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="594" y="867.9243"/><rect fill="#282828" height="19" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="599" y="910.7236"/><rect fill="#282828" height="14" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="851.5" y="362.3325"/><rect fill="#282828" height="381.1938" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="851.5" y="448.9312"/><rect fill="#282828" height="343.3945" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="856.5" y="486.7305"/><rect fill="#282828" height="300.5952" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="861.5" y="529.5298"/><rect fill="#282828" height="251.7959" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1107.5" y="564.3291"/><rect fill="#282828" height="54.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1112.5" y="761.3257"/><rect fill="#282828" height="49.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1405" y="594.1284"/><rect fill="#282828" height="49.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1662.5" y="673.7271"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="135" x2="135" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="363" x2="363" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="589" x2="589" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="856" x2="856" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1112" x2="1112" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1410" x2="1410" y1="85.7373" y2="1063.3223"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1667" x2="1667" y1="85.7373" y2="1063.3223"/><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="231" x="20" y="52.7373"/><ellipse cx="36" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M38.7656,70.2686 L41.1563,71.0186 Q40.6094,73.0029 39.3281,73.9717 Q38.0625,74.9404 36.0938,74.9404 Q33.6719,74.9404 32.1094,73.2842 Q30.5625,71.6279 30.5625,68.7529 Q30.5625,65.7217 32.125,64.0498 Q33.6875,62.3623 36.25,62.3623 Q38.4844,62.3623 39.875,63.6748 Q40.7031,64.4561 41.125,65.9248 L38.6875,66.5029 Q38.4688,65.5498 37.7813,65.0029 Q37.1094,64.4561 36.125,64.4561 Q34.7656,64.4561 33.9219,65.4404 Q33.0938,66.4092 33.0938,68.5811 Q33.0938,70.8779 33.9219,71.8623 Q34.75,72.8467 36.0781,72.8467 Q37.0625,72.8467 37.7656,72.2217 Q38.4688,71.5967 38.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="51" y="73.8125">AbstractApplicationContext</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="231" x="20" y="1062.3223"/><ellipse cx="36" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M38.7656,1079.8535 L41.1563,1080.6035 Q40.6094,1082.5879 39.3281,1083.5566 Q38.0625,1084.5254 36.0938,1084.5254 Q33.6719,1084.5254 32.1094,1082.8691 Q30.5625,1081.2129 30.5625,1078.3379 Q30.5625,1075.3066 32.125,1073.6348 Q33.6875,1071.9473 36.25,1071.9473 Q38.4844,1071.9473 39.875,1073.2598 Q40.7031,1074.041 41.125,1075.5098 L38.6875,1076.0879 Q38.4688,1075.1348 37.7813,1074.5879 Q37.1094,1074.041 36.125,1074.041 Q34.7656,1074.041 33.9219,1075.0254 Q33.0938,1075.9941 33.0938,1078.166 Q33.0938,1080.4629 33.9219,1081.4473 Q34.75,1082.4316 36.0781,1082.4316 Q37.0625,1082.4316 37.7656,1081.8066 Q38.4688,1081.1816 38.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="51" y="1083.3975">AbstractApplicationContext</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="164" x="281" y="52.7373"/><ellipse cx="297" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M299.7656,70.2686 L302.1563,71.0186 Q301.6094,73.0029 300.3281,73.9717 Q299.0625,74.9404 297.0938,74.9404 Q294.6719,74.9404 293.1094,73.2842 Q291.5625,71.6279 291.5625,68.7529 Q291.5625,65.7217 293.125,64.0498 Q294.6875,62.3623 297.25,62.3623 Q299.4844,62.3623 300.875,63.6748 Q301.7031,64.4561 302.125,65.9248 L299.6875,66.5029 Q299.4688,65.5498 298.7813,65.0029 Q298.1094,64.4561 297.125,64.4561 Q295.7656,64.4561 294.9219,65.4404 Q294.0938,66.4092 294.0938,68.5811 Q294.0938,70.8779 294.9219,71.8623 Q295.75,72.8467 297.0781,72.8467 Q298.0625,72.8467 298.7656,72.2217 Q299.4688,71.5967 299.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="312" y="73.8125">LifecycleProcessor</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="164" x="281" y="1062.3223"/><ellipse cx="297" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M299.7656,1079.8535 L302.1563,1080.6035 Q301.6094,1082.5879 300.3281,1083.5566 Q299.0625,1084.5254 297.0938,1084.5254 Q294.6719,1084.5254 293.1094,1082.8691 Q291.5625,1081.2129 291.5625,1078.3379 Q291.5625,1075.3066 293.125,1073.6348 Q294.6875,1071.9473 297.25,1071.9473 Q299.4844,1071.9473 300.875,1073.2598 Q301.7031,1074.041 302.125,1075.5098 L299.6875,1076.0879 Q299.4688,1075.1348 298.7813,1074.5879 Q298.1094,1074.041 297.125,1074.041 Q295.7656,1074.041 294.9219,1075.0254 Q294.0938,1075.9941 294.0938,1078.166 Q294.0938,1080.4629 294.9219,1081.4473 Q295.75,1082.4316 297.0781,1082.4316 Q298.0625,1082.4316 298.7656,1081.8066 Q299.4688,1081.1816 299.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="312" y="1083.3975">LifecycleProcessor</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="228" x="475" y="52.7373"/><ellipse cx="491" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M493.7656,70.2686 L496.1563,71.0186 Q495.6094,73.0029 494.3281,73.9717 Q493.0625,74.9404 491.0938,74.9404 Q488.6719,74.9404 487.1094,73.2842 Q485.5625,71.6279 485.5625,68.7529 Q485.5625,65.7217 487.125,64.0498 Q488.6875,62.3623 491.25,62.3623 Q493.4844,62.3623 494.875,63.6748 Q495.7031,64.4561 496.125,65.9248 L493.6875,66.5029 Q493.4688,65.5498 492.7813,65.0029 Q492.1094,64.4561 491.125,64.4561 Q489.7656,64.4561 488.9219,65.4404 Q488.0938,66.4092 488.0938,68.5811 Q488.0938,70.8779 488.9219,71.8623 Q489.75,72.8467 491.0781,72.8467 Q492.0625,72.8467 492.7656,72.2217 Q493.4688,71.5967 493.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="190" x="506" y="73.8125">DefaultListableBeanFactory</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="228" x="475" y="1062.3223"/><ellipse cx="491" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M493.7656,1079.8535 L496.1563,1080.6035 Q495.6094,1082.5879 494.3281,1083.5566 Q493.0625,1084.5254 491.0938,1084.5254 Q488.6719,1084.5254 487.1094,1082.8691 Q485.5625,1081.2129 485.5625,1078.3379 Q485.5625,1075.3066 487.125,1073.6348 Q488.6875,1071.9473 491.25,1071.9473 Q493.4844,1071.9473 494.875,1073.2598 Q495.7031,1074.041 496.125,1075.5098 L493.6875,1076.0879 Q493.4688,1075.1348 492.7813,1074.5879 Q492.1094,1074.041 491.125,1074.041 Q489.7656,1074.041 488.9219,1075.0254 Q488.0938,1075.9941 488.0938,1078.166 Q488.0938,1080.4629 488.9219,1081.4473 Q489.75,1082.4316 491.0781,1082.4316 Q492.0625,1082.4316 492.7656,1081.8066 Q493.4688,1081.1816 493.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="190" x="506" y="1083.3975">DefaultListableBeanFactory</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="247" x="733" y="52.7373"/><ellipse cx="749" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M751.7656,70.2686 L754.1563,71.0186 Q753.6094,73.0029 752.3281,73.9717 Q751.0625,74.9404 749.0938,74.9404 Q746.6719,74.9404 745.1094,73.2842 Q743.5625,71.6279 743.5625,68.7529 Q743.5625,65.7217 745.125,64.0498 Q746.6875,62.3623 749.25,62.3623 Q751.4844,62.3623 752.875,63.6748 Q753.7031,64.4561 754.125,65.9248 L751.6875,66.5029 Q751.4688,65.5498 750.7813,65.0029 Q750.1094,64.4561 749.125,64.4561 Q747.7656,64.4561 746.9219,65.4404 Q746.0938,66.4092 746.0938,68.5811 Q746.0938,70.8779 746.9219,71.8623 Q747.75,72.8467 749.0781,72.8467 Q750.0625,72.8467 750.7656,72.2217 Q751.4688,71.5967 751.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="209" x="764" y="73.8125">DefaultSingletonBeanRegistry</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="247" x="733" y="1062.3223"/><ellipse cx="749" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M751.7656,1079.8535 L754.1563,1080.6035 Q753.6094,1082.5879 752.3281,1083.5566 Q751.0625,1084.5254 749.0938,1084.5254 Q746.6719,1084.5254 745.1094,1082.8691 Q743.5625,1081.2129 743.5625,1078.3379 Q743.5625,1075.3066 745.125,1073.6348 Q746.6875,1071.9473 749.25,1071.9473 Q751.4844,1071.9473 752.875,1073.2598 Q753.7031,1074.041 754.125,1075.5098 L751.6875,1076.0879 Q751.4688,1075.1348 750.7813,1074.5879 Q750.1094,1074.041 749.125,1074.041 Q747.7656,1074.041 746.9219,1075.0254 Q746.0938,1075.9941 746.0938,1078.166 Q746.0938,1080.4629 746.9219,1081.4473 Q747.75,1082.4316 749.0781,1082.4316 Q750.0625,1082.4316 750.7656,1081.8066 Q751.4688,1081.1816 751.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="209" x="764" y="1083.3975">DefaultSingletonBeanRegistry</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="205" x="1010" y="52.7373"/><ellipse cx="1026" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1028.7656,70.2686 L1031.1563,71.0186 Q1030.6094,73.0029 1029.3281,73.9717 Q1028.0625,74.9404 1026.0938,74.9404 Q1023.6719,74.9404 1022.1094,73.2842 Q1020.5625,71.6279 1020.5625,68.7529 Q1020.5625,65.7217 1022.125,64.0498 Q1023.6875,62.3623 1026.25,62.3623 Q1028.4844,62.3623 1029.875,63.6748 Q1030.7031,64.4561 1031.125,65.9248 L1028.6875,66.5029 Q1028.4688,65.5498 1027.7813,65.0029 Q1027.1094,64.4561 1026.125,64.4561 Q1024.7656,64.4561 1023.9219,65.4404 Q1023.0938,66.4092 1023.0938,68.5811 Q1023.0938,70.8779 1023.9219,71.8623 Q1024.75,72.8467 1026.0781,72.8467 Q1027.0625,72.8467 1027.7656,72.2217 Q1028.4688,71.5967 1028.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="167" x="1041" y="73.8125">DisposableBeanAdapter</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="205" x="1010" y="1062.3223"/><ellipse cx="1026" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1028.7656,1079.8535 L1031.1563,1080.6035 Q1030.6094,1082.5879 1029.3281,1083.5566 Q1028.0625,1084.5254 1026.0938,1084.5254 Q1023.6719,1084.5254 1022.1094,1082.8691 Q1020.5625,1081.2129 1020.5625,1078.3379 Q1020.5625,1075.3066 1022.125,1073.6348 Q1023.6875,1071.9473 1026.25,1071.9473 Q1028.4844,1071.9473 1029.875,1073.2598 Q1030.7031,1074.041 1031.125,1075.5098 L1028.6875,1076.0879 Q1028.4688,1075.1348 1027.7813,1074.5879 Q1027.1094,1074.041 1026.125,1074.041 Q1024.7656,1074.041 1023.9219,1075.0254 Q1023.0938,1075.9941 1023.0938,1078.166 Q1023.0938,1080.4629 1023.9219,1081.4473 Q1024.75,1082.4316 1026.0781,1082.4316 Q1027.0625,1082.4316 1027.7656,1081.8066 Q1028.4688,1081.1816 1028.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="167" x="1041" y="1083.3975">DisposableBeanAdapter</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="330" x="1245" y="52.7373"/><ellipse cx="1261" cy="68.7373" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1263.7656,70.2686 L1266.1563,71.0186 Q1265.6094,73.0029 1264.3281,73.9717 Q1263.0625,74.9404 1261.0938,74.9404 Q1258.6719,74.9404 1257.1094,73.2842 Q1255.5625,71.6279 1255.5625,68.7529 Q1255.5625,65.7217 1257.125,64.0498 Q1258.6875,62.3623 1261.25,62.3623 Q1263.4844,62.3623 1264.875,63.6748 Q1265.7031,64.4561 1266.125,65.9248 L1263.6875,66.5029 Q1263.4688,65.5498 1262.7813,65.0029 Q1262.1094,64.4561 1261.125,64.4561 Q1259.7656,64.4561 1258.9219,65.4404 Q1258.0938,66.4092 1258.0938,68.5811 Q1258.0938,70.8779 1258.9219,71.8623 Q1259.75,72.8467 1261.0781,72.8467 Q1262.0625,72.8467 1262.7656,72.2217 Q1263.4688,71.5967 1263.7656,70.2686 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="292" x="1276" y="73.8125">InitDestroyAnnotationBeanPostProcessor</text><rect fill="#282828" height="32" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="330" x="1245" y="1062.3223"/><ellipse cx="1261" cy="1078.3223" fill="#ADD1B2" rx="9" ry="9" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1263.7656,1079.8535 L1266.1563,1080.6035 Q1265.6094,1082.5879 1264.3281,1083.5566 Q1263.0625,1084.5254 1261.0938,1084.5254 Q1258.6719,1084.5254 1257.1094,1082.8691 Q1255.5625,1081.2129 1255.5625,1078.3379 Q1255.5625,1075.3066 1257.125,1073.6348 Q1258.6875,1071.9473 1261.25,1071.9473 Q1263.4844,1071.9473 1264.875,1073.2598 Q1265.7031,1074.041 1266.125,1075.5098 L1263.6875,1076.0879 Q1263.4688,1075.1348 1262.7813,1074.5879 Q1262.1094,1074.041 1261.125,1074.041 Q1259.7656,1074.041 1258.9219,1075.0254 Q1258.0938,1075.9941 1258.0938,1078.166 Q1258.0938,1080.4629 1258.9219,1081.4473 Q1259.75,1082.4316 1261.0781,1082.4316 Q1262.0625,1082.4316 1262.7656,1081.8066 Q1263.4688,1081.1816 1263.7656,1079.8535 Z " fill="#FFB000"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="292" x="1276" y="1083.3975">InitDestroyAnnotationBeanPostProcessor</text><rect fill="#282828" height="31.0146" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="125" x="1605" y="53.7227"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="111" x="1612" y="74.7979">DisposableBean</text><rect fill="#282828" height="31.0146" rx="2.5" ry="2.5" style="stroke:#FFB000;stroke-width:1.0;" width="125" x="1605" y="1062.3223"/><text fill="#FFB000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="111" x="1612" y="1083.3975">DisposableBean</text><rect fill="#282828" height="942.585" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="130.5" y="95.7373"/><rect fill="#282828" height="912.7856" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="135.5" y="125.5366"/><rect fill="#282828" height="869.9863" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="140.5" y="168.3359"/><rect fill="#282828" height="827.187" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="145.5" y="211.1353"/><rect fill="#282828" height="740.5884" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="150.5" y="297.7339"/><rect fill="#282828" height="70.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="155.5" y="967.5229"/><rect fill="#282828" height="28" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="160.5" y="1010.3223"/><rect fill="#282828" height="14" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="358" y="245.9346"/><rect fill="#282828" height="721.7891" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="584" y="332.5332"/><rect fill="#282828" height="515.5918" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="589" y="414.1318"/><rect fill="#282828" height="61.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="594" y="867.9243"/><rect fill="#282828" height="19" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="599" y="910.7236"/><rect fill="#282828" height="14" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="851.5" y="362.3325"/><rect fill="#282828" height="381.1938" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="851.5" y="448.9312"/><rect fill="#282828" height="343.3945" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="856.5" y="486.7305"/><rect fill="#282828" height="300.5952" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="861.5" y="529.5298"/><rect fill="#282828" height="251.7959" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1107.5" y="564.3291"/><rect fill="#282828" height="54.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1112.5" y="761.3257"/><rect fill="#282828" height="49.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1405" y="594.1284"/><rect fill="#282828" height="49.7993" style="stroke:#FFB000;stroke-width:1.0;" width="10" x="1662.5" y="673.7271"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="140.5" x2="187.5" y1="112.5366" y2="112.5366"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="187.5" x2="187.5" y1="112.5366" y2="125.5366"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="146.5" x2="187.5" y1="125.5366" y2="125.5366"/><polygon fill="#FFB000" points="156.5,121.5366,146.5,125.5366,156.5,129.5366,152.5,125.5366" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="152.5" y="107.8071">close()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="145.5" x2="192.5" y1="155.3359" y2="155.3359"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="192.5" x2="192.5" y1="155.3359" y2="168.3359"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="151.5" x2="192.5" y1="168.3359" y2="168.3359"/><polygon fill="#FFB000" points="161.5,164.3359,151.5,168.3359,161.5,172.3359,157.5,168.3359" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="63" x="157.5" y="150.6064">doClose()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="150.5" x2="197.5" y1="198.1353" y2="198.1353"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="197.5" x2="197.5" y1="198.1353" y2="211.1353"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="156.5" x2="197.5" y1="211.1353" y2="211.1353"/><polygon fill="#FFB000" points="166.5,207.1353,156.5,211.1353,166.5,215.1353,162.5,211.1353" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="95" x="162.5" y="193.4058">publishEvent()</text><polygon fill="#FFB000" points="346,241.9346,356,245.9346,346,249.9346,350,245.9346" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="155.5" x2="352" y1="245.9346" y2="245.9346"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="63" x="162.5" y="241.2051">onClose()</text><polygon fill="#FFB000" points="166.5,255.9346,156.5,259.9346,166.5,263.9346,162.5,259.9346" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="160.5" x2="362" y1="259.9346" y2="259.9346"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="155.5" x2="202.5" y1="284.7339" y2="284.7339"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="202.5" x2="202.5" y1="284.7339" y2="297.7339"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="161.5" x2="202.5" y1="297.7339" y2="297.7339"/><polygon fill="#FFB000" points="171.5,293.7339,161.5,297.7339,171.5,301.7339,167.5,297.7339" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="101" x="167.5" y="280.0044">destroyBeans()</text><polygon fill="#FFB000" points="572,328.5332,582,332.5332,572,336.5332,576,332.5332" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="160.5" x2="578" y1="332.5332" y2="332.5332"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="130" x="167.5" y="327.8037">destroySingletons()</text><polygon fill="#FFB000" points="839.5,358.3325,849.5,362.3325,839.5,366.3325,843.5,362.3325" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="594" x2="845.5" y1="362.3325" y2="362.3325"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="130" x="601" y="357.603">destroySingletons()</text><polygon fill="#FFB000" points="605,372.3325,595,376.3325,605,380.3325,601,376.3325" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="599" x2="855.5" y1="376.3325" y2="376.3325"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="594" x2="641" y1="401.1318" y2="401.1318"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="641" x2="641" y1="401.1318" y2="414.1318"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="600" x2="641" y1="414.1318" y2="414.1318"/><polygon fill="#FFB000" points="610,410.1318,600,414.1318,610,418.1318,606,414.1318" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="123" x="606" y="396.4023">destroySingleton()</text><polygon fill="#FFB000" points="839.5,444.9312,849.5,448.9312,839.5,452.9312,843.5,448.9312" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="599" x2="845.5" y1="448.9312" y2="448.9312"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="123" x="606" y="444.2017">destroySingleton()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="861.5" x2="908.5" y1="473.7305" y2="473.7305"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="908.5" x2="908.5" y1="473.7305" y2="486.7305"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="867.5" x2="908.5" y1="486.7305" y2="486.7305"/><polygon fill="#FFB000" points="877.5,482.7305,867.5,486.7305,877.5,490.7305,873.5,486.7305" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="121" x="873.5" y="469.001">removeSingleton()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="866.5" x2="913.5" y1="516.5298" y2="516.5298"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="913.5" x2="913.5" y1="516.5298" y2="529.5298"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="872.5" x2="913.5" y1="529.5298" y2="529.5298"/><polygon fill="#FFB000" points="882.5,525.5298,872.5,529.5298,882.5,533.5298,878.5,529.5298" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="94" x="878.5" y="511.8003">destroyBean()</text><polygon fill="#FFB000" points="1095.5,560.3291,1105.5,564.3291,1095.5,568.3291,1099.5,564.3291" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="871.5" x2="1101.5" y1="564.3291" y2="564.3291"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="62" x="878.5" y="559.5996">destroy()</text><polygon fill="#FFB000" points="1393,590.1284,1403,594.1284,1393,598.1284,1397,594.1284" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="1117.5" x2="1399" y1="594.1284" y2="594.1284"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="210" x="1124.5" y="589.3989">postProcessBeforeDestruction()</text><path d="M1099,607.1284 L1099,632.1284 L1400,632.1284 L1400,617.1284 L1390,607.1284 L1099,607.1284 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1390,607.1284 L1390,617.1284 L1400,617.1284 L1390,607.1284 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="280" x="1105" y="625.1982">这里调用 Bean @PreDestroy 指定的方法 方法</text><polygon fill="#FFB000" points="1128.5,639.9277,1118.5,643.9277,1128.5,647.9277,1124.5,643.9277" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1122.5" x2="1409" y1="643.9277" y2="643.9277"/><polygon fill="#FFB000" points="1650.5,669.7271,1660.5,673.7271,1650.5,677.7271,1654.5,673.7271" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="1117.5" x2="1656.5" y1="673.7271" y2="673.7271"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="62" x="1124.5" y="668.9976">destroy()</text><path d="M1513,686.7271 L1513,711.7271 L1822,711.7271 L1822,696.7271 L1812,686.7271 L1513,686.7271 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1812,686.7271 L1812,696.7271 L1822,696.7271 L1812,686.7271 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="288" x="1519" y="704.7969">这里调用 DisposableBean 指定得 destory 方法</text><polygon fill="#FFB000" points="1128.5,719.5264,1118.5,723.5264,1128.5,727.5264,1124.5,723.5264" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1122.5" x2="1666.5" y1="723.5264" y2="723.5264"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="1117.5" x2="1164.5" y1="748.3257" y2="748.3257"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="1164.5" x2="1164.5" y1="748.3257" y2="761.3257"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="1123.5" x2="1164.5" y1="761.3257" y2="761.3257"/><polygon fill="#FFB000" points="1133.5,757.3257,1123.5,761.3257,1133.5,765.3257,1129.5,761.3257" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="203" x="1129.5" y="743.5962">invokeCustomDestroyMethod()</text><path d="M982,779.3257 L982,804.3257 L1242,804.3257 L1242,789.3257 L1232,779.3257 L982,779.3257 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><path d="M1232,779.3257 L1232,789.3257 L1242,789.3257 L1232,779.3257 " fill="#282828" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="239" x="988" y="797.3955">这里调用 自定义的 指定的 destory 方法</text><polygon fill="#FFB000" points="882.5,812.125,872.5,816.125,882.5,820.125,878.5,816.125" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="876.5" x2="1111.5" y1="816.125" y2="816.125"/><polygon fill="#FFB000" points="610,826.125,600,830.125,610,834.125,606,830.125" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="604" x2="855.5" y1="830.125" y2="830.125"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="599" x2="646" y1="854.9243" y2="854.9243"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="646" x2="646" y1="854.9243" y2="867.9243"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="605" x2="646" y1="867.9243" y2="867.9243"/><polygon fill="#FFB000" points="615,863.9243,605,867.9243,615,871.9243,611,867.9243" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="208" x="611" y="850.1948">updateManualSingletonNames()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="604" x2="651" y1="897.7236" y2="897.7236"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="651" x2="651" y1="897.7236" y2="910.7236"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="610" x2="651" y1="910.7236" y2="910.7236"/><polygon fill="#FFB000" points="620,906.7236,610,910.7236,620,914.7236,616,910.7236" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="134" x="616" y="892.9941">clearByTypeCache()</text><polygon fill="#FFB000" points="171.5,925.7236,161.5,929.7236,171.5,933.7236,167.5,929.7236" style="stroke:#FFB000;stroke-width:1.0;"/><line style="stroke:#FFB000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="165.5" x2="583" y1="929.7236" y2="929.7236"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="160.5" x2="207.5" y1="954.5229" y2="954.5229"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="207.5" x2="207.5" y1="954.5229" y2="967.5229"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="166.5" x2="207.5" y1="967.5229" y2="967.5229"/><polygon fill="#FFB000" points="176.5,963.5229,166.5,967.5229,176.5,971.5229,172.5,967.5229" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="129" x="172.5" y="949.7935">closeBeanFactory()</text><line style="stroke:#FFB000;stroke-width:1.0;" x1="170.5" x2="212.5" y1="1002.3223" y2="1002.3223"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="212.5" x2="212.5" y1="1002.3223" y2="1015.3223"/><line style="stroke:#FFB000;stroke-width:1.0;" x1="171.5" x2="212.5" y1="1015.3223" y2="1015.3223"/><polygon fill="#FFB000" points="181.5,1011.3223,171.5,1015.3223,181.5,1019.3223,177.5,1015.3223" style="stroke:#FFB000;stroke-width:1.0;"/><text fill="#FFB000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="63" x="177.5" y="997.5928">onClose()</text><line style="stroke:#FFB000;stroke-width:2.0;" x1="126.5" x2="144.5" y1="1036.3223" y2="1054.3223"/><line style="stroke:#FFB000;stroke-width:2.0;" x1="126.5" x2="144.5" y1="1054.3223" y2="1036.3223"/><!--MD5=[44e450656db0008d23c0d2ff30b5aa87]
+@startuml spring destroy bean
+title spring-destroy-bean
+!theme crt-amber
+participant AbstractApplicationContext  as aac  <<(C,#ADD1B2)>>
+participant LifecycleProcessor as lp <<(C,#ADD1B2)>> 
+participant DefaultListableBeanFactory as dlbf <<(C,#ADD1B2)>> 
+participant DefaultSingletonBeanRegistry as dsbr <<(C,#ADD1B2)>> 
+participant DisposableBeanAdapter as dba <<(C,#ADD1B2)>> 
+participant InitDestroyAnnotationBeanPostProcessor as idabp <<(C,#ADD1B2)>>
+participant DisposableBean as db
+activate aac
+aac->aac ++:close()
+aac->aac ++:doClose()
+aac->aac ++:publishEvent()
+aac-> lp ++:onClose()
+return 
+aac-> aac ++:destroyBeans()
+aac->dlbf ++:destroySingletons()
+dlbf->dsbr ++:destroySingletons()
+return
+dlbf->dlbf ++:destroySingleton()
+dlbf->dsbr ++:destroySingleton()
+dsbr->dsbr ++:removeSingleton()
+dsbr->dsbr ++: destroyBean()
+dsbr->dba ++: destroy()
+dba->idabp ++: postProcessBeforeDestruction()
+note left of idabp
+    这里调用 Bean @PreDestroy 指定的方法 方法
+end note
+return
+dba->db ++:destroy()
+note over of db
+    这里调用 DisposableBean 指定得 destory 方法
+end note
+return
+dba->dba ++:invokeCustomDestroyMethod()
+note over of dba
+    这里调用 自定义的 指定的 destory 方法
+end note
+dba- -> dsbr
+deactivate dba
+deactivate dba
+dsbr- ->dlbf
+deactivate dsbr
+deactivate dsbr
+deactivate dsbr
+dlbf->dlbf ++:updateManualSingletonNames()
+dlbf->dlbf ++:clearByTypeCache()
+dlbf - -> aac
+deactivate dlbf
+deactivate dlbf
+deactivate dlbf
+
+aac->aac ++: closeBeanFactory()
+aac->aac ++: onClose()
+
+
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+destroy aac
+
+@enduml
+
+@startuml spring destroy bean
+title spring-destroy-bean
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #282828
+    FontColor #FFB000
+    FontName Verdana
+    HyperLinkColor #FFCC00
+    LineColor #FFB000
+    LineThickness 1
+    Margin 5
+  }
+  box {
+    LineStyle 12-18
+    LineThickness 3
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #FFB000
+    FontColor #282828
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  referenceHeader {
+    BackgroundColor #FFB000
+    FontColor #282828
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #FFB000
+    FontColor #282828
+    FontStyle bold
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #FFB000
+skinparam BackgroundColor #282828
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy solid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #FFB000
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #282828
+  BarColor #FFB000
+  BorderColor #FFB000
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #FFB000
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #282828
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #282828
+  BorderColor #FFB000
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #FFCC00
+}
+skinparam IconPackage {
+  Color #FFB000
+  BackgroundColor #282828
+}
+skinparam IconPrivate {
+  Color #FFB000
+  BackgroundColor #282828
+}
+skinparam IconProtected {
+  Color #FFB000
+  BackgroundColor #282828
+}
+skinparam IconPublic {
+  Color #FFB000
+  BackgroundColor #282828
+}
+skinparam Note {
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor #FFB000
+}
+skinparam Package {
+  BorderColor #FFB000
+  FontColor #FFB000
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #282828
+  BorderColor #FFB000
+}
+skinparam StereotypeA {
+  BackgroundColor #FFB000
+  BorderColor #FFB000
+}
+skinparam StereotypeC {
+  BackgroundColor #FFB000
+  BorderColor #FFB000
+}
+skinparam StereotypeE {
+  BackgroundColor #FFB000
+  BorderColor #FFB000
+}
+skinparam StereotypeI {
+  BackgroundColor #FFB000
+  BorderColor #FFB000
+}
+skinparam StereotypeN {
+  BackgroundColor #FFB000
+  BorderColor #FFB000
+}
+skinparam UseCaseStereoType {
+  FontColor #FFB000
+  FontName Verdana
+}
+participant AbstractApplicationContext  as aac  <<(C,#ADD1B2)>>
+participant LifecycleProcessor as lp <<(C,#ADD1B2)>> 
+participant DefaultListableBeanFactory as dlbf <<(C,#ADD1B2)>> 
+participant DefaultSingletonBeanRegistry as dsbr <<(C,#ADD1B2)>> 
+participant DisposableBeanAdapter as dba <<(C,#ADD1B2)>> 
+participant InitDestroyAnnotationBeanPostProcessor as idabp <<(C,#ADD1B2)>>
+participant DisposableBean as db
+activate aac
+aac->aac ++:close()
+aac->aac ++:doClose()
+aac->aac ++:publishEvent()
+aac-> lp ++:onClose()
+return 
+aac-> aac ++:destroyBeans()
+aac->dlbf ++:destroySingletons()
+dlbf->dsbr ++:destroySingletons()
+return
+dlbf->dlbf ++:destroySingleton()
+dlbf->dsbr ++:destroySingleton()
+dsbr->dsbr ++:removeSingleton()
+dsbr->dsbr ++: destroyBean()
+dsbr->dba ++: destroy()
+dba->idabp ++: postProcessBeforeDestruction()
+note left of idabp
+    这里调用 Bean @PreDestroy 指定的方法 方法
+end note
+return
+dba->db ++:destroy()
+note over of db
+    这里调用 DisposableBean 指定得 destory 方法
+end note
+return
+dba->dba ++:invokeCustomDestroyMethod()
+note over of dba
+    这里调用 自定义的 指定的 destory 方法
+end note
+dba- -> dsbr
+deactivate dba
+deactivate dba
+dsbr- ->dlbf
+deactivate dsbr
+deactivate dsbr
+deactivate dsbr
+dlbf->dlbf ++:updateManualSingletonNames()
+dlbf->dlbf ++:clearByTypeCache()
+dlbf - -> aac
+deactivate dlbf
+deactivate dlbf
+deactivate dlbf
+
+aac->aac ++: closeBeanFactory()
+aac->aac ++: onClose()
+
+
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+deactivate aac
+destroy aac
+
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: en
+Country: US
+--></g></svg>

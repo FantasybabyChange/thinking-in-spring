@@ -9,6 +9,14 @@
         <version>${javax.annotation.version}</version>
     </dependency>
   ```
+  `因为java9之后 j2ee改名为` **`jakarta`**  所以使用jakarta注解更好
+  ```xml
+      <dependency>
+          <groupId>jakarta.annotation</groupId>
+          <artifactId>jakarta.annotation-api</artifactId>
+          <version>${jakarta.annotation.version}</version>
+      </dependency>
+  ```
 * 实现 InitializingBean 接口的 afterPropertiesSet() 方法
 * 自定义初始化方法
   1. XML 配置：<bean init-method=”init” ... />

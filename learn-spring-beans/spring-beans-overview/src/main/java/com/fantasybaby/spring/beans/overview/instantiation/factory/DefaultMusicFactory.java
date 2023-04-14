@@ -1,16 +1,20 @@
 package com.fantasybaby.spring.beans.overview.instantiation.factory;
 
 import com.fantasybaby.spring.beans.overview.instantiation.Music;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-import javax.annotation.PostConstruct;
+//import javax.annotation.PostConstruct;
+//import javax.annotation.PreDestroy;
 
 /**
  * Created on 4/11/2023.
  *
  * @author Fantasy Baby
  */
-public class DefaultMusicFactory implements MusicFactory , InitializingBean {
+public class DefaultMusicFactory implements MusicFactory , InitializingBean, DisposableBean {
     @Override
     public Music createMusic() {
         Music music = new Music();
@@ -30,5 +34,19 @@ public class DefaultMusicFactory implements MusicFactory , InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println(this.getClass().getName()+" afterPropertiesSet");
+    }
+    @PreDestroy
+    public void destroyPreMethod(){
+        System.out.println(this.getClass().getName()+"  @PreDestroy");
+
+    }
+    public void customerDestroyMethod(){
+        System.out.println(this.getClass().getName()+" customerDestroyMethod");
+
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println(this.getClass().getName()+" DisposableBean");
     }
 }
