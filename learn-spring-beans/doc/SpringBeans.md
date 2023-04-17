@@ -13,6 +13,11 @@
 [Spring bean initialization](../doc/bean_lifecyle/SpringBeansInitialization.md)
 ### **Bean的销毁**  
 [Spring bean initialization](../doc/bean_lifecyle/SpringBeansInitialization.md)
+### **Bean的垃圾回收**  
+Bean 垃圾回收（GC）
+1. 关闭 Spring 容器（应用上下文）
+2. 执行 GC
+3. Spring Bean 覆盖的 finalize() 方法被回
 ### **FactoryBean**
  Interface to be implemented by objects used within a BeanFactory which are themselves factories for individual objects. If a bean implements this interface, it is used as a factory for an object to expose, not directly as a bean instance that will be exposed itself.  
  解决复杂的构造场景.  

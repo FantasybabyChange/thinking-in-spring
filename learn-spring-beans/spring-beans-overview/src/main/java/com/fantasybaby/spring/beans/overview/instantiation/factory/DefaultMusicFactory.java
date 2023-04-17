@@ -46,7 +46,14 @@ public class DefaultMusicFactory implements MusicFactory , InitializingBean, Dis
     }
 
     @Override
-    public void destroy() throws Exception {
+    public void destroy() {
         System.out.println(this.getClass().getName()+" DisposableBean");
+    }
+
+    @Override
+    public void finalize() {
+        System.out.println("DefaultMusicFactory  gc =============================");
+        System.exit(0);
+
     }
 }
