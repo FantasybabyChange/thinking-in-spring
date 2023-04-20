@@ -5,6 +5,15 @@
 |依赖查找|主动获取|相对繁琐|侵入业务逻辑|依赖容器API|良好|
 |依赖注入| 被动提供| 相对便利| 低侵入性| 不依赖容器| 一般|
 
+### **依赖查找概览**
+* 单一类型依赖查找
+   * JNDI - javax.naming.Context#lookup(javax.naming.Name)
+  * JavaBeans - java.beans.beancontext.BeanContext
+* 集合类型依赖查找
+  * java.beans.beancontext.BeanContext
+* 层次性依赖查找
+  * java.beans.beancontext.BeanContext
+
 ### **构造器注入 与 Setter注入**
 #### **SpringFramework的看法**
 * 更推荐构造器注入, 可以使你的应用组件实现为不可变对象并且确保你需要的依赖不为null.另外 构造器注入的组件总会返回客户端调用的代码一个完整的初始化后状态. 另外大量的构造器参数是一个坏味道, 这意味着我们需要重构来做到更好的关注点分离

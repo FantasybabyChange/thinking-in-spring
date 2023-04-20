@@ -17,5 +17,9 @@
 |Lazy initialization mode |Bean 延迟初始化模式（延迟和非延迟）|
 |Initialization method |Bean 初始化回调方法名称|
 |Destruction method |Bean 销毁回调方法名称|
+
+| 方法| 说明 |
+|--- | --- |
+|**getBeanClassName** |  返回当前类的名称|
 ### **BeanDefinition构建与注册**
    [BeanDefinition构建与注册](SpringBeansCreateAndRegister.md)
