@@ -51,13 +51,25 @@
  HierarchicalBeanFactory
 * 双亲 BeanFactory：getParentBeanFactory()
 * 层次性查找
-* 根据 Bean 名称查找
-* 基于 containsLocalBean 方法实现
-* 根据 Bean 类型查找实例列表
-* 单一类型：BeanFactoryUtils#beanOfType
-* 集合类型：BeanFactoryUtils#beansOfTypeIncludingAncestors
-* 根据 Java 注解查找名称列表
-* BeanFactoryUtils#beanNamesForTypeIncludingAncestors
+  * 根据 Bean 名称查找(官方没有实现 ,可以使用递归查找)
+    * 基于 containsLocalBean 方法实现
+    ```java
+     private static boolean containsBean(HierarchicalBeanFactory beanFactory, String beanName) {
+        BeanFactory parentBeanFactory = beanFactory.getParentBeanFactory();
+        if (parentBeanFactory instanceof HierarchicalBeanFactory) {
+            HierarchicalBeanFactory parentHierarchicalBeanFactory = HierarchicalBeanFactory.class.cast(parentBeanFactory);
+            if (containsBean(parentHierarchicalBeanFactory, beanName)) {
+                return true;
+            }
+        }
+        return beanFactory.containsLocalBean(beanName);
+    }
+    ```
+  * 根据 Bean 类型查找实例列表
+    * 单一类型：BeanFactoryUtils#beanOfType
+    * 集合类型：BeanFactoryUtils#beansOfTypeIncludingAncestors
+  * 根据 Java 注解查找名称列表
+    * BeanFactoryUtils#beanNamesForTypeIncludingAncestors
 
 #### 4. 延迟依赖查找 - HierarchicalBeanFactory
 1. **spring 1.0.2**  
