@@ -20,6 +20,11 @@
             <artifactId>ioc-container-overview</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>spring-beans-overview</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
     </dependencies>
 

@@ -71,7 +71,7 @@
   * 根据 Java 注解查找名称列表
     * BeanFactoryUtils#beanNamesForTypeIncludingAncestors
 
-#### 4. 延迟依赖查找 - HierarchicalBeanFactory
+#### **4. 延迟依赖查找**
 1. **spring 1.0.2**  
  通过[ObjectFactory#getObject()](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/ObjectFactory.java)的 [ObjectFactoryCreatingFactoryBean](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/ObjectFactoryCreatingFactoryBean.java) 来实现延时加载
  ```java

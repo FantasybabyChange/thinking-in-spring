@@ -1,10 +1,10 @@
 package com.fantasybaby.spring.ioc.lookup;
 
-import jdk.jfr.Name;
-import org.springframework.beans.factory.BeanFactory;
+import com.fantasybaby.spring.beans.overview.instantiation.Music;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 
 /**
  * 单一类型 延迟查找
@@ -18,7 +18,28 @@ public class SingleBeanLookupDemo {
         applicationContext.register(SingleBeanLookupDemo.class);
         applicationContext.refresh();
         getBeanByObjectProvider(applicationContext);
+
+        getBeanAvailable(applicationContext);
+
+        getBeanByLambadaStream(applicationContext);
+
         applicationContext.close();
+    }
+
+    private static void getBeanByLambadaStream(AnnotationConfigApplicationContext applicationContext) {
+        ObjectProvider<String> beanProvider = applicationContext.getBeanProvider(String.class);
+        beanProvider.forEach(System.out::println);
+    }
+
+    /**
+     * 获取bean 不存在就创建
+     *
+     * @param applicationContext 应用程序上下文
+     */
+    private static void getBeanAvailable(AnnotationConfigApplicationContext applicationContext) {
+        ObjectProvider<Music> beanProvider = applicationContext.getBeanProvider(Music.class);
+        Music ifAvailable = beanProvider.getIfAvailable(Music::createMusic);
+        System.out.println(ifAvailable);
     }
 
     /**
@@ -38,7 +59,13 @@ public class SingleBeanLookupDemo {
      * @return {@link String}
      */
     @Bean
+    @Primary
     public String strMethodName() {
         return "abc";
+    }
+
+    @Bean
+    public String strMethodName2() {
+        return "cba";
     }
 }
