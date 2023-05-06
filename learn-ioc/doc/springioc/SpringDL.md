@@ -120,3 +120,6 @@ Spring 提供了很多内建的对象
  | org.springframework.context.annotation.internalCommonAnnotationProcessor |[CommonAnnotationBeanPostProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/CommonAnnotationBeanPostProcessor.java) | （条件激活）处理 JSR-250 注解,如 @PostConstruct 等 |
  | org.springframework.context.event.internalEventListenerProcessor |[EventListenerMethodProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/event/EventListenerMethodProcessor.java) | 处理标注 @EventListener 的Spring 事件监听方法 |
  | org.springframework.context.annotation.internalPersistenceAnnotationProcessor |[PersistenceAnnotationBeanPostProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-orm/src/main/java/org/springframework/orm/jpa/support/PersistenceAnnotationBeanPostProcessor.java) | （条件激活）处理 JPA 注解场景 |
+
+
+ ## **依赖查找的异常**  
