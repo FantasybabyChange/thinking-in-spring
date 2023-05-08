@@ -21,7 +21,7 @@
 * [Spring依赖注入](springioc/SpringDI.md)
 * [IOC的一些问题](springioc/SpringIOCQuestions.md)
 #### **Ioc依赖来源**
-相关[代码来自]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocDiView.java))
+相关[代码来自](../ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/di/SpringIocDiView.java)
 * 自定义Bean
 ```java
 //获取自定义bean
