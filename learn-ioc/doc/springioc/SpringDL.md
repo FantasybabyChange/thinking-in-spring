@@ -1,7 +1,8 @@
 # **Spring依赖查找**
 ## **Spring依赖查找概览**
 ## **Spring依赖查找**
-  相关[代码实例]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocLookUp.java))
+  1. 相关[代码实例]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocLookUp.java))  
+  2. [依赖查找面试题](SpringDLQuestions.md)
 * 根据 Bean 名称查找
   * 实时查找  通过 beanFactory.getBean
   * 延迟查找  通过 objectFactory.getObject()
@@ -128,8 +129,7 @@ Spring 提供了很多内建的对象
  |异常类型| 触发条件（举例）| 场景举例|
  |--------|--------|--------|
 |NoSuchBeanDefinitionException |当查找 Bean 不存在于 IoC 容器时 |BeanFactory#getBean    ObjectFactory#getObject|
-
-|NoUniqueBeanDefinitionException| 类型依赖查找时，IoC 容器存在多个 Bean 实例 |BeanFactory#getBean(Class)|
+| NoUniqueBeanDefinitionException| 类型依赖查找时，IoC 容器存在多个 Bean 实例 |BeanFactory#getBean(Class)|
 |BeanInstantiationException| 当 Bean 所对应的类型非具体类时 | BeanFactory#getBean|
 |BeanCreationException| 当 Bean 初始化过程中 Bean |初始化方法执行异常时  |
 |BeanDefinitionStoreException| 当 BeanDefinition 配置元信息非法时  | XML 配置资源无法打开时|
