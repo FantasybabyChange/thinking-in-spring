@@ -2,7 +2,7 @@
 [相关问题](springDI/springDIQuestion.md)
 ## **Spring依赖注入概览**
 ###  **Spring依赖注入方式**
-相关[代码实例]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocDiView.java))
+相关[代码实例](/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/di/SpringIocDiView.java)
 * 根据 Bean 名称注入
 * 根据 Bean 类型注入
   * 单个 Bean 对象
@@ -25,8 +25,8 @@
 ### **注入类型**
 | 依赖注入类型 | 配置元数据举例 |
 |-----|-----|
-|Setter|方法 \<proeprty name=”user” ref=”userBean” />|
-|构造器| \<constructor-arg name="user" ref="userBean" /> |
+|[Setter](springDI/setterAndConstructorDi.md)|方法 \<proeprty name=”user” ref=”userBean” />|
+|[构造器](springDI/setterAndConstructorDi.md)| \<constructor-arg name="user" ref="userBean" /> |
 |字段|@Autowired User user;|
 |方法|@Autowired public void user(User user) { ... }|
 |接口回调|class MyBean implements BeanFactoryAware { ...} |
