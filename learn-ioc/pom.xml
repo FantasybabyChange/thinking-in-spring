@@ -15,6 +15,7 @@
         <module>java-beans-ioc</module>
         <module>ioc-container-overview</module>
         <module>ioc-dependency-lookup</module>
+        <module>ioc-dependency-inject</module>
     </modules>
     <dependencies>
         
