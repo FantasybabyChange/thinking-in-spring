@@ -27,6 +27,6 @@
 |-----|-----|
 |[Setter](springDI/setterAndConstructorDi.md)|方法 \<proeprty name=”user” ref=”userBean” />|
 |[构造器](springDI/setterAndConstructorDi.md)| \<constructor-arg name="user" ref="userBean" /> |
-|字段|@Autowired User user;|
-|方法|@Autowired public void user(User user) { ... }|
+|[字段](springDI/setterAndConstructorDi.md)|@Autowired User user;|
+|[方法](springDI/setterAndConstructorDi.md)|@Autowired public void user(User user) { ... }|
 |接口回调|class MyBean implements BeanFactoryAware { ...} |
