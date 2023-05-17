@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" name="user" class="com.fantasybaby.spring.ioc.overview.model.User">
+        <property name="age" value="2"/>
+        <property name="name" value="basicType"/>
+        <property name="city" value="BAO_JI"/>
+        <property name="workCities" value="SHANGHAI,HANGZHOU"/>
+        <property name="liveCities">
+            <list>
+                <value>BAO_JI</value>
+                <value>CHENGDU</value>
+            </list>
+        </property>
+        <property name="path" value="classpath:/config_type.properties"/>
+    </bean>
+
+    <bean name="userHolder" class="com.fantasybaby.spring.ioc.inject.setter.holder.UserHolder">
+        <property name="user" ref="user"/>
+    </bean>
+</beans>
