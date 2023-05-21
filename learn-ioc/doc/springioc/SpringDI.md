@@ -11,7 +11,7 @@
 * 注入非 Bean 对象
 * 注入类型
   * 实时注入
-  * 延迟注
+  * 延迟注入
 
 ## **依赖注入的模式以及类型**
 ### **注入模式**
@@ -48,7 +48,7 @@
 在一些情况下,我们有自动装配时有多个候选Bean，这个时候通常需要控制选择过程.通过使用 [@Primary](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/Primary.java)注解来表明标注的Bean是需要有限考虑的  
 * **@Qualifier**  
 在一些场景下我们需要对不同的实例进行限定以及分组,可以使用[@Qualifier](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Qualifier.java)
-[代码](../../\ioc-dependency-inject\src\main\java\com\fantasybaby\spring\ioc\inject\selection\QualifiersNameInjectDemo.java)  
+ [代码演示](../../ioc-dependency-inject\src\main\java\com\fantasybaby\spring\ioc\inject\selection\QualifiersNameInjectDemo.java)  
 1. 限定Bean  
      * 通过名称限定
      * 通过分组限定
@@ -60,3 +60,18 @@ public @interface LoadBalanced {
 
 }
 ```
+### **依赖延迟注入**
+[代码](../../ioc-dependency-inject/src/main/java/com/fantasybaby/spring/ioc/inject/lazy/LazyInjectDemo.java)
+1. 使用 API ObjectFactory 延迟注入
+     * 单一类型
+     * 集合类型
+2. 使用 API ObjectProvider 延迟注入（推荐）
+      * 单一类型
+      * 集合类型
+
+
+### **Spring依赖解析**
+当依赖查询到后Spring会对依赖进行解析
+接口 [AutowireCapableBeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java)#resolveDependency
+[具体过程](springDI/dependencyResolve.md)
+
