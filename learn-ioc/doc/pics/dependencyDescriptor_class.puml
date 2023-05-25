@@ -1,0 +1,29 @@
+@startuml DependencyDescriptor class
+title dependencyDescriptor
+ note left of InjectionPoint : A simple descriptor for an injection point, pointing to a method/constructor    \nparameter or a field
+
+ note left of  DependencyDescriptor : Descriptor for a specific dependency that is about to be injected 
+
+class InjectionPoint {
+  #MethodParameter methodParameter;
+  #Field field;
+  -Annotation[] fieldAnnotations;
+}
+
+class DependencyDescriptor{
+  -final Class<?> declaringClass;
+	-String methodName;
+	-Class<?>[] parameterTypes;
+	-int parameterIndex;
+	-String fieldName;
+	-final boolean required;
+	-final boolean eager;
+	-int nestingLevel = 1;
+	-Class<?> containingClass;
+	-transient volatile ResolvableType resolvableType;
+	-transient volatile TypeDescriptor typeDescriptor;
+}
+InjectionPoint <|-- DependencyDescriptor
+
+
+@enduml
