@@ -23,6 +23,13 @@ import java.util.List;
  * @author Fantasy Baby
  */
 public class DependencyResolutionDemo {
+    /**
+     * 只注入一个Bean
+     * 对应的 {@link DependencyDescriptor}
+     * 	required = true;
+     * 	eager = false;
+     *
+     */
     @Resource
     private User someUser;
 

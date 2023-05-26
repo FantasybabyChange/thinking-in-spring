@@ -1,12 +1,12 @@
 # **依赖解决**
-在依赖注入的时候,
+在依赖注入的时候,我们会针对指定的Bean解析指定的依赖项.
 * 入口  AutowireCapableBeanFactory#resolveDependency 
         DefaultListableBeanFactory#resolveDependency
 * 依赖描述符 - DependencyDescriptor
 * 自定绑定候选对象处理器 - AutowireCandidateResolve
 ## **resolveDependency**
 
-接口 [AutowireCapableBeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java) 提供了两个方法来处理注入Bean的依赖关系.
+接口 [AutowireCapableBeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java) 提供了两个方法来处理注入Bean的依赖关系. 从spring 2.5之后就提供了
 ```java
     Object resolveDependency(DependencyDescriptor descriptor, @Nullable String requestingBeanName) throws BeansException;
     Object resolveDependency(DependencyDescriptor descriptor, @Nullable String requestingBeanName,
@@ -23,7 +23,7 @@
 	protected MethodParameter methodParameter;
     //存放包装成员属性
 	protected Field field;
-
+    //包装的字段或者方法上的所有注解
 	private volatile Annotation[] fieldAnnotations;
 ```
 **DependencyDescriptor** 
@@ -46,8 +46,10 @@
 	private int nestingLevel = 1;
     // 标识所包装依赖的包含者类，通常和声明类是同一个
 	private Class<?> containingClass;
-    // 所包装依赖  解析后的 字段方法 ResolvableType 的类型
+    // 所包装依赖  解析后的 字段方法 ResolvableType 的类型 泛型处理
 	private transient volatile ResolvableType resolvableType;
-    // 要转换的方法类型
+    // 依赖类型相关的描述
 	private transient volatile TypeDescriptor typeDescriptor;
 ```
+## **resolveDependency依赖处理流程**
+
