@@ -29,6 +29,7 @@ public class DependencyResolutionDemo {
      * 	required = true;
      * 	eager = false;
      *
+     *
      */
     @Resource
     private User someUser;

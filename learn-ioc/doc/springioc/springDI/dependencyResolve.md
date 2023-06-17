@@ -16,7 +16,7 @@
 [DependencyDescriptor](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/DependencyDescriptor.java) 会对指定的注入的依赖进行描述, 包装构造器参数,方法参数或者一个字段,允许对元数据进行统一访问.
 ![类图](../../pics/svg/DependencyDescriptor_class.svg)  
 
-**InjectionPoint**
+**InjectionPoint**(from 4.3)
 是一个注入点, 指向一个方法/构造参数 或者一个字段.
 ```java
     //存放包装方法函数
@@ -26,7 +26,7 @@
     //包装的字段或者方法上的所有注解
 	private volatile Annotation[] fieldAnnotations;
 ```
-**DependencyDescriptor** 
+**DependencyDescriptor** (from 2.5)
 ```java
     //当前属性或者方法所在的类的信息
     private final Class<?> declaringClass;
@@ -40,7 +40,7 @@
 	private String fieldName;
     //表示所包装依赖是否必须依赖.
 	private final boolean required;
-    // 标识所包装依赖是否需要饥饿加载
+    // 标识所包装依赖是否需要饥饿加载 true是实时加载
 	private final boolean eager;
     // 标识所包装依赖的嵌套级别
 	private int nestingLevel = 1;

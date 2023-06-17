@@ -1,20 +1,21 @@
 @startuml resolveDependencyFlow
 title resolveDependency flow
-!theme sketchy-outline
+' !theme sketchy-outline
 start
-:AbstractApplicationContext:refresh();
-:synchronized(startupShutdownMonitor);
+:DefaultListableBeanFactory:resolveDependency();
+:DependencyDescriptor:initParameterNameDiscovery(ParameterNameDiscoverer);
 note left
-    对于"refresh"的"destroy"的同步锁.
+给方法参数提供初始化参数名称的发现策略
+  当调用getParameterName()的时候提供方法参数 
 end note
-:DefaultApplicationStartup:start();
-:AbstractApplicationContext:prepareRefresh();
-:AbstractApplicationContext: prepareRefresh();
+:根据依赖类型走入后续逻辑;
 note left
-  Spring bean 对象和非Spring bean对象
+   Optional,ObjectFactory,ObjectProvider
+   jakarta.inject.Provider 等
+   这里逻辑比较多 
 end note
-partition prepareRefresh{
-:设置相应状态;
+partition AutowireCandidateResolver{
+:getLazyResolutionProxyIfNecessary;
 :initPropertySources();
 note right
  初始化属性资源
