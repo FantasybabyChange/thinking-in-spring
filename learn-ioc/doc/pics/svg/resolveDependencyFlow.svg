@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1375px" preserveAspectRatio="none" style="width:1213px;height:1375px;background:#FFFFFF;" version="1.1" viewBox="0 0 1213 1375" width="1213px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="29.1201" id="_title" style="stroke:none;stroke-width:1.0;" width="185" x="512.625" y="15"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="175" x="517.625" y="36.0439">resolveDependency flow</text><ellipse cx="573.5" cy="60.1201" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="291" x="428" y="90.1201"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="271" x="438" y="113.8721">DefaultListableBeanFactory:resolveDependency()</text><path d="M10,141.9487 L10,187.4575 A0,0 0 0 0 10,187.4575 L319,187.4575 A0,0 0 0 0 319,187.4575 L319,168.7031 L339,164.7031 L319,160.7031 L319,151.9487 L309,141.9487 L10,141.9487 A0,0 0 0 0 10,141.9487 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M309,141.9487 L309,151.9487 L319,151.9487 L309,141.9487 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="247" x="16" y="161.8467">给方法参数提供初始化参数名称的发现策略</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="276" x="24" y="179.6011">当调用getParameterName()的时候提供方法参数</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="469" x="339" y="146.5088"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="449" x="349" y="170.2607">DependencyDescriptor:initParameterNameDiscovery(ParameterNameDiscoverer)</text><path d="M228.5,197.4575 L228.5,260.7207 A0,0 0 0 0 228.5,260.7207 L471.5,260.7207 A0,0 0 0 0 471.5,260.7207 L471.5,233.0891 L491.5,229.0891 L471.5,225.0891 L471.5,207.4575 L461.5,197.4575 L228.5,197.4575 A0,0 0 0 0 228.5,197.4575 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M461.5,197.4575 L461.5,207.4575 L471.5,207.4575 L461.5,197.4575 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="222" x="234.5" y="217.3555">Optional,ObjectFactory,ObjectProvider</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="234.5" y="235.1099">jakarta.inject.Provider 等</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="234.5" y="252.8643">这里逻辑比较多</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="491.5" y="210.8948"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144" x="501.5" y="234.6467">根据依赖类型走入后续逻辑</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="190" x="478.5" y="280.7207"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="170" x="488.5" y="304.4727">getAutowireCandidateResolver</text><rect fill="none" height="87.5088" style="stroke:#000000;stroke-width:1.5;" width="568" x="456" y="327.1094"/><path d="M646,327.1094 L646,339.2295 L636,349.2295 L456,349.2295 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="459" y="344.1533">AutowireCandidateResolver{</text><path d="M701,370.5466 L701,380.4238 L681,384.4238 L701,388.4238 L701,398.301 A0,0 0 0 0 701,398.301 L1014,398.301 A0,0 0 0 0 1014,398.301 L1014,380.5466 L1004,370.5466 L701,370.5466 A0,0 0 0 0 701,370.5466 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1004,370.5466 L1004,380.5466 L1014,380.5466 L1004,370.5466 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="292" x="707" y="390.4446">根据injection point,如果是懒加载会创建一个代理类</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="215" x="466" y="366.2295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="195" x="476" y="389.9814">getLazyResolutionProxyIfNecessary</text><path d="M185,438.9353 L185,466.6897 A0,0 0 0 0 185,466.6897 L388,466.6897 A0,0 0 0 0 388,466.6897 L388,456.9353 L408,452.8125 L388,448.9353 L388,448.9353 L378,438.9353 L185,438.9353 A0,0 0 0 0 185,438.9353 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M378,438.9353 L378,448.9353 L388,448.9353 L378,438.9353 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="182" x="191" y="458.8333">通过依赖描述设置当前的注入点</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="331" x="408" y="434.6182"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="311" x="418" y="458.3701">ConstructorResolver.setCurrentInjectionPoint(descriptor)</text><path d="M347,495.324 L347,523.0784 A0,0 0 0 0 347,523.0784 L472,523.0784 A0,0 0 0 0 472,523.0784 L472,513.324 L492,509.2012 L472,505.324 L472,505.324 L462,495.324 L347,495.324 A0,0 0 0 0 347,495.324 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M462,495.324 L462,505.324 L472,505.324 L462,495.324 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="353" y="515.2219">获取一个一个快照</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="163" x="492" y="491.0068"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143" x="502" y="514.7588">descriptor.resolveShortcut</text><path d="M779.5,551.7126 L779.5,561.5898 L759.5,565.5898 L779.5,569.5898 L779.5,579.467 A0,0 0 0 0 779.5,579.467 L921.5,579.467 A0,0 0 0 0 921.5,579.467 L921.5,561.7126 L911.5,551.7126 L779.5,551.7126 A0,0 0 0 0 779.5,551.7126 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M911.5,551.7126 L911.5,561.7126 L921.5,561.7126 L911.5,551.7126 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121" x="785.5" y="571.6106">获取一个建议的Bean</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="372" x="387.5" y="547.3955"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="352" x="397.5" y="571.1475">getAutowireCandidateResolver().getSuggestedValue(descriptor)</text><path d="M85.5,599.2241 L85.5,644.7329 A0,0 0 0 0 85.5,644.7329 L484.5,644.7329 A0,0 0 0 0 484.5,644.7329 L484.5,625.9785 L504.5,621.9785 L484.5,617.9785 L484.5,609.2241 L474.5,599.2241 L85.5,599.2241 A0,0 0 0 0 85.5,599.2241 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M474.5,599.2241 L474.5,609.2241 L484.5,609.2241 L474.5,599.2241 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="378" x="91.5" y="619.1221">如果是集合相关的Bean 通过这个方法解析 Map,Collection,Stream</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="307" x="95.5" y="636.8765">这个逻辑和单个Bean类似不过不需要判断主要的Bean</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="504.5" y="603.7842"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="118" x="514.5" y="627.5361">resolveMultipleBeans</text><polygon fill="#F1F1F1" points="528.5,664.7329,618.5,664.7329,630.5,676.7329,618.5,688.7329,528.5,688.7329,516.5,676.7329,528.5,664.7329" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="528.5" y="681.8274">multipleBean != null</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="498.5" y="674.3159">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="12" x="630.5" y="674.3159">no</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="127" x="224.25" y="698.7329"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="104" x="237.25" y="722.4849">返回multipleBeans</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="151" x="783.75" y="698.7329"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="793.75" y="722.4849">findAutowireCandidates</text><rect fill="none" height="207.8975" style="stroke:#000000;stroke-width:1.5;" width="831" x="371.25" y="745.1216"/><path d="M535.25,745.1216 L535.25,757.2417 L525.25,767.2417 L371.25,767.2417 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="374.25" y="762.1655">findAutowireCandidates{</text><path d="M1046.25,788.5588 L1046.25,798.436 L1026.25,802.436 L1046.25,806.436 L1046.25,816.3132 A0,0 0 0 0 1046.25,816.3132 L1192.25,816.3132 A0,0 0 0 0 1192.25,816.3132 L1192.25,798.5588 L1182.25,788.5588 L1046.25,788.5588 A0,0 0 0 0 1046.25,788.5588 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1182.25,788.5588 L1182.25,798.5588 L1192.25,798.5588 L1182.25,788.5588 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="1052.25" y="808.4568">获取所有候选者Name</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="334" x="692.25" y="784.2417"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="314" x="702.25" y="807.9937">BeanFactoryUtils.beanNamesForTypeIncludingAncestors</text><polygon fill="#F1F1F1" points="764.75,840.6304,953.75,840.6304,965.75,852.6304,953.75,864.6304,764.75,864.6304,752.75,852.6304,764.75,840.6304" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="764.75" y="857.7249">isSelfReference || isAutowireCandidate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="734.75" y="850.2134">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="12" x="965.75" y="850.2134">no</text><path d="M391.25,878.9475 L391.25,906.7019 A0,0 0 0 0 391.25,906.7019 L660.25,906.7019 A0,0 0 0 0 660.25,906.7019 L660.25,896.9475 L680.25,892.8247 L660.25,888.9475 L660.25,888.9475 L650.25,878.9475 L391.25,878.9475 A0,0 0 0 0 391.25,878.9475 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M650.25,878.9475 L650.25,888.9475 L660.25,888.9475 L650.25,878.9475 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="248" x="397.25" y="898.8455">没有自引用 和 满足自动装配则放入result中</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="125" x="680.25" y="874.6304"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="105" x="690.25" y="898.3823">addCandidateEntry</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="131" x="910.25" y="874.6304"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="923.25" y="898.3823">没有候选者进行处理</text><polygon fill="#F1F1F1" points="859.25,917.019,871.25,929.019,859.25,941.019,847.25,929.019,859.25,917.019" style="stroke:#181818;stroke-width:0.5;"/><path d="M503.25,968.459 L503.25,1013.9678 A0,0 0 0 0 503.25,1013.9678 L749.25,1013.9678 A0,0 0 0 0 749.25,1013.9678 L749.25,995.2134 L769.25,991.2134 L749.25,987.2134 L749.25,978.459 L739.25,968.459 L503.25,968.459 A0,0 0 0 0 503.25,968.459 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M739.25,968.459 L739.25,978.459 L749.25,978.459 L739.25,968.459 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="509.25" y="988.3569">通过是否胃primary等条件决定自动装配</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="509.25" y="1006.1113">Bean的名称</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="769.25" y="973.019"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="160" x="779.25" y="996.771">determineAutowireCandidate</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="252" x="733.25" y="1033.9678"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="232" x="743.25" y="1057.7197">matchingBeans.get(autowiredBeanName)</text><path d="M390.25,1144.1851 L390.25,1171.9395 A0,0 0 0 0 390.25,1171.9395 L662.25,1171.9395 A0,0 0 0 0 662.25,1171.9395 L662.25,1162.1851 L682.25,1158.0623 L662.25,1154.1851 L662.25,1154.1851 L652.25,1144.1851 L390.25,1144.1851 A0,0 0 0 0 390.25,1144.1851 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M652.25,1144.1851 L652.25,1154.1851 L662.25,1154.1851 L652.25,1144.1851 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="251" x="396.25" y="1164.083">通过自动装配Bean的名称解析为最终的对象</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="354" x="682.25" y="1139.8679"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="334" x="692.25" y="1163.6199">descriptor.resolveCandidate(autowiredBeanName, type, this)</text><polygon fill="#F1F1F1" points="817.25,1090.3564,901.25,1090.3564,913.25,1102.3564,901.25,1114.3564,817.25,1114.3564,805.25,1102.3564,817.25,1090.3564" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="863.25" y="1126.9624">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="817.25" y="1107.4509">instance of Class</text><polygon fill="#F1F1F1" points="859.25,1196.2566,871.25,1208.2566,859.25,1220.2566,847.25,1208.2566,859.25,1196.2566" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="206" x="756.25" y="1240.2566"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="186" x="766.25" y="1264.0085">Object result = instanceCandidate</text><rect fill="#F1F1F1" height="36.3887" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="820.25" y="1296.6453"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="830.25" y="1320.3972">返回 result</text><polygon fill="#F1F1F1" points="573.5,1339.0339,585.5,1351.0339,573.5,1363.0339,561.5,1351.0339,573.5,1339.0339" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="70.1201" y2="90.1201"/><polygon fill="#181818" points="569.5,80.1201,573.5,90.1201,577.5,80.1201,573.5,84.1201" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="126.5088" y2="146.5088"/><polygon fill="#181818" points="569.5,136.5088,573.5,146.5088,577.5,136.5088,573.5,140.5088" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="182.8975" y2="210.8948"/><polygon fill="#181818" points="569.5,200.8948,573.5,210.8948,577.5,200.8948,573.5,204.8948" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="247.2834" y2="280.7207"/><polygon fill="#181818" points="569.5,270.7207,573.5,280.7207,577.5,270.7207,573.5,274.7207" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="317.1094" y2="366.2295"/><polygon fill="#181818" points="569.5,356.2295,573.5,366.2295,577.5,356.2295,573.5,360.2295" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="402.6182" y2="434.6182"/><polygon fill="#181818" points="569.5,424.6182,573.5,434.6182,577.5,424.6182,573.5,428.6182" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="471.0068" y2="491.0068"/><polygon fill="#181818" points="569.5,481.0068,573.5,491.0068,577.5,481.0068,573.5,485.0068" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="527.3955" y2="547.3955"/><polygon fill="#181818" points="569.5,537.3955,573.5,547.3955,577.5,537.3955,573.5,541.3955" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="583.7842" y2="603.7842"/><polygon fill="#181818" points="569.5,593.7842,573.5,603.7842,577.5,593.7842,573.5,597.7842" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="752.75" x2="742.75" y1="852.6304" y2="852.6304"/><line style="stroke:#181818;stroke-width:1.0;" x1="742.75" x2="742.75" y1="852.6304" y2="874.6304"/><polygon fill="#181818" points="738.75,864.6304,742.75,874.6304,746.75,864.6304,742.75,868.6304" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="965.75" x2="975.75" y1="852.6304" y2="852.6304"/><line style="stroke:#181818;stroke-width:1.0;" x1="975.75" x2="975.75" y1="852.6304" y2="874.6304"/><polygon fill="#181818" points="971.75,864.6304,975.75,874.6304,979.75,864.6304,975.75,868.6304" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="742.75" x2="742.75" y1="911.019" y2="929.019"/><line style="stroke:#181818;stroke-width:1.0;" x1="742.75" x2="847.25" y1="929.019" y2="929.019"/><polygon fill="#181818" points="837.25,925.019,847.25,929.019,837.25,933.019,841.25,929.019" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="975.75" x2="975.75" y1="911.019" y2="929.019"/><line style="stroke:#181818;stroke-width:1.0;" x1="975.75" x2="871.25" y1="929.019" y2="929.019"/><polygon fill="#181818" points="881.25,925.019,871.25,929.019,881.25,933.019,877.25,929.019" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="820.6304" y2="840.6304"/><polygon fill="#181818" points="855.25,830.6304,859.25,840.6304,863.25,830.6304,859.25,834.6304" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="735.1216" y2="784.2417"/><polygon fill="#181818" points="855.25,774.2417,859.25,784.2417,863.25,774.2417,859.25,778.2417" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="941.019" y2="973.019"/><polygon fill="#181818" points="855.25,963.019,859.25,973.019,863.25,963.019,859.25,967.019" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1009.4077" y2="1033.9678"/><polygon fill="#181818" points="855.25,1023.9678,859.25,1033.9678,863.25,1023.9678,859.25,1027.9678" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1114.3564" y2="1139.8679"/><polygon fill="#181818" points="855.25,1129.8679,859.25,1139.8679,863.25,1129.8679,859.25,1133.8679" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="913.25" x2="1046.25" y1="1102.3564" y2="1102.3564"/><polygon fill="#181818" points="1042.25,1148.0623,1046.25,1158.0623,1050.25,1148.0623,1046.25,1152.0623" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1046.25" x2="1046.25" y1="1102.3564" y2="1208.2566"/><line style="stroke:#181818;stroke-width:1.0;" x1="1046.25" x2="871.25" y1="1208.2566" y2="1208.2566"/><polygon fill="#181818" points="881.25,1204.2566,871.25,1208.2566,881.25,1212.2566,877.25,1208.2566" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1176.2566" y2="1196.2566"/><polygon fill="#181818" points="855.25,1186.2566,859.25,1196.2566,863.25,1186.2566,859.25,1190.2566" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1070.3564" y2="1090.3564"/><polygon fill="#181818" points="855.25,1080.3564,859.25,1090.3564,863.25,1080.3564,859.25,1084.3564" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1220.2566" y2="1240.2566"/><polygon fill="#181818" points="855.25,1230.2566,859.25,1240.2566,863.25,1230.2566,859.25,1234.2566" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1276.6453" y2="1296.6453"/><polygon fill="#181818" points="855.25,1286.6453,859.25,1296.6453,863.25,1286.6453,859.25,1290.6453" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="516.5" x2="287.75" y1="676.7329" y2="676.7329"/><line style="stroke:#181818;stroke-width:1.0;" x1="287.75" x2="287.75" y1="676.7329" y2="698.7329"/><polygon fill="#181818" points="283.75,688.7329,287.75,698.7329,291.75,688.7329,287.75,692.7329" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="630.5" x2="859.25" y1="676.7329" y2="676.7329"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="676.7329" y2="698.7329"/><polygon fill="#181818" points="855.25,688.7329,859.25,698.7329,863.25,688.7329,859.25,692.7329" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="287.75" x2="287.75" y1="735.1216" y2="1351.0339"/><line style="stroke:#181818;stroke-width:1.0;" x1="287.75" x2="561.5" y1="1351.0339" y2="1351.0339"/><polygon fill="#181818" points="551.5,1347.0339,561.5,1351.0339,551.5,1355.0339,555.5,1351.0339" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="859.25" y1="1333.0339" y2="1351.0339"/><line style="stroke:#181818;stroke-width:1.0;" x1="859.25" x2="585.5" y1="1351.0339" y2="1351.0339"/><polygon fill="#181818" points="595.5,1347.0339,585.5,1351.0339,595.5,1355.0339,591.5,1351.0339" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="573.5" x2="573.5" y1="640.1729" y2="664.7329"/><polygon fill="#181818" points="569.5,654.7329,573.5,664.7329,577.5,654.7329,573.5,658.7329" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[89af0be52418104623d76efab9a65b02]
+@startuml resolveDependencyFlow
+title resolveDependency flow
+' !theme sketchy-outline
+start
+:DefaultListableBeanFactory:resolveDependency();
+:DependencyDescriptor:initParameterNameDiscovery(ParameterNameDiscoverer);
+note left
+给方法参数提供初始化参数名称的发现策略
+  当调用getParameterName()的时候提供方法参数 
+end note
+:根据依赖类型走入后续逻辑;
+note left
+   Optional,ObjectFactory,ObjectProvider
+   jakarta.inject.Provider 等
+   这里逻辑比较多 
+end note
+:getAutowireCandidateResolver;
+partition AutowireCandidateResolver{
+
+:getLazyResolutionProxyIfNecessary;
+note right
+  根据injection point,如果是懒加载会创建一个代理类
+end note
+}
+:ConstructorResolver.setCurrentInjectionPoint(descriptor);
+note left
+通过依赖描述设置当前的注入点
+end note
+:descriptor.resolveShortcut;
+note left
+获取一个一个快照
+end note
+:getAutowireCandidateResolver().getSuggestedValue(descriptor);
+note right
+获取一个建议的Bean
+end note
+:resolveMultipleBeans;
+note left
+ 如果是集合相关的Bean 通过这个方法解析 Map,Collection,Stream
+  这个逻辑和单个Bean类似不过不需要判断主要的Bean
+end note
+if(multipleBean != null)then(yes)
+: 返回multipleBeans;
+else(no)
+:findAutowireCandidates;
+partition findAutowireCandidates{
+  :BeanFactoryUtils.beanNamesForTypeIncludingAncestors;
+note right
+获取所有候选者Name
+end note
+if(isSelfReference || isAutowireCandidate) then(yes)
+  :addCandidateEntry;
+note left
+没有自引用 和 满足自动装配则放入result中
+end note
+else(no)
+ : 没有候选者进行处理;
+endif
+}
+:determineAutowireCandidate;
+note left
+通过是否胃primary等条件决定自动装配
+Bean的名称
+end note
+:matchingBeans.get(autowiredBeanName);
+if(instance of Class)then(yes)
+  :descriptor.resolveCandidate(autowiredBeanName, type, this);
+  note left
+  通过自动装配Bean的名称解析为最终的对象
+  end note
+endif
+:Object result = instanceCandidate;
+:返回 result;
+@enduml
+
+@startuml resolveDependencyFlow
+title resolveDependency flow
+start
+:DefaultListableBeanFactory:resolveDependency();
+:DependencyDescriptor:initParameterNameDiscovery(ParameterNameDiscoverer);
+note left
+给方法参数提供初始化参数名称的发现策略
+  当调用getParameterName()的时候提供方法参数 
+end note
+:根据依赖类型走入后续逻辑;
+note left
+   Optional,ObjectFactory,ObjectProvider
+   jakarta.inject.Provider 等
+   这里逻辑比较多 
+end note
+:getAutowireCandidateResolver;
+partition AutowireCandidateResolver{
+
+:getLazyResolutionProxyIfNecessary;
+note right
+  根据injection point,如果是懒加载会创建一个代理类
+end note
+}
+:ConstructorResolver.setCurrentInjectionPoint(descriptor);
+note left
+通过依赖描述设置当前的注入点
+end note
+:descriptor.resolveShortcut;
+note left
+获取一个一个快照
+end note
+:getAutowireCandidateResolver().getSuggestedValue(descriptor);
+note right
+获取一个建议的Bean
+end note
+:resolveMultipleBeans;
+note left
+ 如果是集合相关的Bean 通过这个方法解析 Map,Collection,Stream
+  这个逻辑和单个Bean类似不过不需要判断主要的Bean
+end note
+if(multipleBean != null)then(yes)
+: 返回multipleBeans;
+else(no)
+:findAutowireCandidates;
+partition findAutowireCandidates{
+  :BeanFactoryUtils.beanNamesForTypeIncludingAncestors;
+note right
+获取所有候选者Name
+end note
+if(isSelfReference || isAutowireCandidate) then(yes)
+  :addCandidateEntry;
+note left
+没有自引用 和 满足自动装配则放入result中
+end note
+else(no)
+ : 没有候选者进行处理;
+endif
+}
+:determineAutowireCandidate;
+note left
+通过是否胃primary等条件决定自动装配
+Bean的名称
+end note
+:matchingBeans.get(autowiredBeanName);
+if(instance of Class)then(yes)
+  :descriptor.resolveCandidate(autowiredBeanName, type, this);
+  note left
+  通过自动装配Bean的名称解析为最终的对象
+  end note
+endif
+:Object result = instanceCandidate;
+:返回 result;
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: en
+Country: US
+--></g></svg>

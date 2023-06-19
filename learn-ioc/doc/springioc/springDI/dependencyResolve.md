@@ -52,4 +52,5 @@
 	private transient volatile TypeDescriptor typeDescriptor;
 ```
 ## **resolveDependency依赖处理流程**
-
+ 下图为一个Bean 的依赖处理流程 
+![依赖处理流程](../../pics/svg/resolveDependencyFlow.svg)

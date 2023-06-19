@@ -14,52 +14,61 @@ note left
    jakarta.inject.Provider 等
    这里逻辑比较多 
 end note
+:getAutowireCandidateResolver;
 partition AutowireCandidateResolver{
+
 :getLazyResolutionProxyIfNecessary;
-:initPropertySources();
 note right
- 初始化属性资源
- Initialize any placeholder property sources in the context environment.
-end note
-:validateRequiredProperties();
-note right
- 校验需要的属性
- Validate that all properties marked as required are resolvable
+  根据injection point,如果是懒加载会创建一个代理类
 end note
 }
-:obtainFreshBeanFactory;
+:ConstructorResolver.setCurrentInjectionPoint(descriptor);
 note left
-Tell the subclass to refresh the internal bean factory
+通过依赖描述设置当前的注入点
 end note
-:prepareBeanFactory;
+:descriptor.resolveShortcut;
 note left
-Prepare the bean factory for use in this context.
+获取一个一个快照
 end note
-:postProcessBeanFactory;
+:getAutowireCandidateResolver().getSuggestedValue(descriptor);
 note right
-Allows post-processing of the bean factory in context subclasses.
+获取一个建议的Bean
 end note
-partition post-process-bean {
-:invokeBeanFactoryPostProcessors(beanFactory);
+:resolveMultipleBeans;
+note left
+ 如果是集合相关的Bean 通过这个方法解析 Map,Collection,Stream
+  这个逻辑和单个Bean类似不过不需要判断主要的Bean
+end note
+if(multipleBean != null)then(yes)
+: 返回multipleBeans;
+else(no)
+:findAutowireCandidates;
+partition findAutowireCandidates{
+  :BeanFactoryUtils.beanNamesForTypeIncludingAncestors;
 note right
-Invoke factory processors registered as beans in the context.
+获取所有候选者Name
 end note
-:registerBeanPostProcessors(beanFactory);
-note right
-Register bean processors that intercept bean creation.
+if(isSelfReference || isAutowireCandidate) then(yes)
+  :addCandidateEntry;
+note left
+没有自引用 和 满足自动装配则放入result中
 end note
+else(no)
+ : 没有候选者进行处理;
+endif
 }
-:initMessageSource;
+:determineAutowireCandidate;
 note left
- Initialize message source for this context.
+通过是否胃primary等条件决定自动装配
+Bean的名称
 end note
-:initApplicationEventMulticaster;
-:onRefresh;
-:registerListeners;
-:finishBeanFactoryInitialization;
-note left 
-Instantiate all remaining (non-lazy-init) singletons.
-end note 
-:finishRefresh;
-:resetCommonCaches;
+:matchingBeans.get(autowiredBeanName);
+if(instance of Class)then(yes)
+  :descriptor.resolveCandidate(autowiredBeanName, type, this);
+  note left
+  通过自动装配Bean的名称解析为最终的对象
+  end note
+endif
+:Object result = instanceCandidate;
+:返回 result;
 @enduml

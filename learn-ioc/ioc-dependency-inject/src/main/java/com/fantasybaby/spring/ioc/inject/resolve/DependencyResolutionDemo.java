@@ -28,11 +28,12 @@ public class DependencyResolutionDemo {
      * 对应的 {@link DependencyDescriptor}
      * 	required = true;
      * 	eager = false;
-     *
-     *
+     *  primary = true;
      */
+//    @Resource
+//    private User someUser;
     @Resource
-    private User someUser;
+    private List<User> someUsers;
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
