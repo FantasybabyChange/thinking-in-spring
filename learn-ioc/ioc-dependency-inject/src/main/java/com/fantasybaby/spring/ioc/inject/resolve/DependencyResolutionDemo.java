@@ -9,8 +9,10 @@ import org.springframework.beans.factory.config.DependencyDescriptor;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * dependency resolution
@@ -30,10 +32,31 @@ public class DependencyResolutionDemo {
      * 	eager = false;
      *  primary = true;
      */
-//    @Resource
-//    private User someUser;
+    @Resource
+    private User someUser;
+
+    /**
+     * lazy 对象的创建 会返回一个代理对象
+     */
+    @Resource
+    @Lazy
+    private User someUserLazy;
+
+    /**
+     * 只注入一个Bean
+     * 对应的 {@link DependencyDescriptor}
+     * 	required = true;
+     * 	eager = false;
+     *  primary = true;
+     *  type = util.List
+     */
     @Resource
     private List<User> someUsers;
+    /**
+     * optional的对象创建
+     */
+    @Resource
+    private Optional<User> someUserOptional;
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
@@ -42,6 +65,7 @@ public class DependencyResolutionDemo {
         String contextPath = "classpath:/study-ioc-lookup.xml";
         xmlBeanDefinitionReader.loadBeanDefinitions(contextPath);
         annotationConfigApplicationContext.refresh();
+        System.out.println(annotationConfigApplicationContext.getBean(DependencyResolutionDemo.class).someUserOptional.get());
     }
 
 }
