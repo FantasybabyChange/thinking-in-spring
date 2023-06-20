@@ -25,6 +25,10 @@
             <artifactId>spring-beans-overview</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>jakarta.inject</groupId>
+            <artifactId>jakarta.inject-api</artifactId>
+        </dependency>
 
     </dependencies>
 

@@ -20,7 +20,7 @@ jdk:17
 ### **Spring Bean相关**
 1. [Spring 与Beans](/learn-spring-beans/doc/SpringBeans.md)
    1. [Spring Bean的命名](/learn-spring-beans/doc/bean_lifecyle/SpringBeanNaming.md)
-   2. [Srping bean的定义](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
-   3. [Srping bean的创建](/learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)
-   4. [Srping bean的实例化](/learn-spring-beans/doc/bean_lifecyle/SpringBeansInstantiation.md)
-   5. [Srping bean的销毁](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDestory.md)
+   2. [Spring bean的定义](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
+   3. [Spring bean的创建](/learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)
+   4. [Spring bean的实例化](/learn-spring-beans/doc/bean_lifecyle/SpringBeansInstantiation.md)
+   5. [Spring bean的销毁](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDestory.md)

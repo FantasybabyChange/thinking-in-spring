@@ -1,4 +1,4 @@
-## **Autowired 自动绑定**
+## **自动绑定**
 ### **简介**
 [自动绑定概念](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-autowire)  
 Autowired[官方使用文档](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation)  
@@ -28,4 +28,4 @@ Spring容器可以在合作的Bean之间自动绑定关系. 可以通过检查 A
    1. 停止使用自动绑定而使用显示的绑定
    2. 通过将 autowire-candidate属性设置为false来避免自动绑定
    3. 使用primary来标注Bean
-   4. 通过基于注解(@Autowired ..)实现更细粒度的控制
+   4. 通过基于注解([@Autowired](%40Autowired.md) ..)实现更细粒度的控制

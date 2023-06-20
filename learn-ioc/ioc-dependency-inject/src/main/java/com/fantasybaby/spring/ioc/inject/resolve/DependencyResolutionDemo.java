@@ -4,6 +4,7 @@ import com.fantasybaby.spring.ioc.overview.model.User;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.DependencyDescriptor;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -31,16 +32,24 @@ public class DependencyResolutionDemo {
      * 	required = true;
      * 	eager = false;
      *  primary = true;
+     *   mapping {@link org.springframework.context.annotation.CommonAnnotationBeanPostProcessor}
      */
-    @Resource
+//    @Resource
     private User someUser;
+
+
+    /**
+     * {@link  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor}
+     */
+    @Autowired
+    private User autoUser;
 
     /**
      * lazy 对象的创建 会返回一个代理对象
      */
-    @Resource
-    @Lazy
-    private User someUserLazy;
+//    @Resource
+//    @Lazy
+//    private User someUserLazy;
 
     /**
      * 只注入一个Bean
@@ -50,13 +59,13 @@ public class DependencyResolutionDemo {
      *  primary = true;
      *  type = util.List
      */
-    @Resource
-    private List<User> someUsers;
+//    @Resource
+//    private List<User> someUsers;
     /**
      * optional的对象创建
      */
-    @Resource
-    private Optional<User> someUserOptional;
+//    @Resource
+//    private Optional<User> someUserOptional;
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();
@@ -65,7 +74,7 @@ public class DependencyResolutionDemo {
         String contextPath = "classpath:/study-ioc-lookup.xml";
         xmlBeanDefinitionReader.loadBeanDefinitions(contextPath);
         annotationConfigApplicationContext.refresh();
-        System.out.println(annotationConfigApplicationContext.getBean(DependencyResolutionDemo.class).someUserOptional.get());
+//        System.out.println(annotationConfigApplicationContext.getBean(DependencyResolutionDemo.class).someUserOptional.get());
     }
 
 }
