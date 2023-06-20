@@ -1,14 +1,15 @@
-## **使用@Resource注入**
-@Resource 是 java提供的一个注解 
-```xml
-  <dependency>
-         <groupId>jakarta.annotation</groupId>
-         <artifactId>jakarta.annotation-api</artifactId>
-         <version>${jakarta.annotation.version}</version>
-   </dependency>
-```
+## **使用@Autowired注入**
+官方文档: [@Autowired使用](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html)
+[@Autowired源码](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java)
 ### **@Autowired注入的规则以及原理**
 @Autowired注解由这个类去筛选[AutowiredAnnotationBeanPostProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java)  
-@Resource由 [CommonAnnotationBeanPostProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/CommonAnnotationBeanPostProcessor.java)
+#### **@autowired 注入过程**
+AutowiredAnnotationBeanPostProcessor postProcessMergedBeanDefinition
+findAutowiringMetadata
+AbstractAutowireCapableBeanFactory populateBean
+AutowiredAnnotationBeanPostProcessor postProcessProperties
+InjectedElement inject
+1. 元信息解析
+2. 依赖查找
+3. 依赖注入(字段,方法)
 
-ResourceElement  LookupElement

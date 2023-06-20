@@ -1,5 +1,5 @@
-@startuml APPLICAIONCONTEXT-START-WORKFLOW
-title applicaioncontext start workflow
+@startuml autowired-annotation-inject
+title autowired annotation inject
 !theme sketchy-outline
 start
 :AbstractApplicationContext:refresh();
