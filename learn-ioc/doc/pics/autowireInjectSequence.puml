@@ -1,67 +1,96 @@
 @startuml Autowired-Inject-Sequence
 title Autowired Inject Sequence
 ' !theme crt-amber
-participant AbstractApplicationContext  as aac  <<(C,#ADD1B2)>>
-participant LifecycleProcessor as lp <<(C,#ADD1B2)>> 
-participant DefaultListableBeanFactory as dlbf <<(C,#ADD1B2)>> 
+participant DefaultListableBeanFactory  as dlbf  <<(C,#ADD1B2)>>
+participant AbstractBeanFactory as abf <<(C,#ADD1B2)>> 
 participant DefaultSingletonBeanRegistry as dsbr <<(C,#ADD1B2)>> 
-participant DisposableBeanAdapter as dba <<(C,#ADD1B2)>> 
-participant InitDestroyAnnotationBeanPostProcessor as idabp <<(C,#ADD1B2)>>
-participant DisposableBean as db
-activate aac
-aac->aac ++:close()
-aac->aac ++:doClose()
-aac->aac ++:publishEvent()
-aac-> lp ++:onClose()
+participant AbstractBeanFactoryLambda as abflambda <<(C,#ADD1B2)>> 
+participant AbstractAutowireCapableBeanFactory as aacbf <<(C,#ADD1B2)>> 
+participant AutowiredAnnotationBeanPostProcessor as aabpp <<(C,#ADD1B2)>> 
+participant ReflectionUtils as rutils <<(C,#ADD1B2)>> 
+participant InjectionMetadata as imdata <<(C,#ADD1B2)>> 
+participant AutowiredAnnotationBeanPostProcessor.AutowiredElement as ielement <<(C,#ADD1B2)>> 
+
+
+
+
+activate dlbf
+dlbf->abf ++:getBean()
+abf->abf ++:doGetBean()
+abf->dsbr ++:getSingleton()
+dsbr-> abflambda ++:getObject()
+abflambda ->aacbf ++:createBean()
+aacbf ->aacbf ++:doCreateBean()
+aacbf ->aacbf ++:createBeanInstance()
+aacbf ->aacbf ++:applyMergedBeanDefinitionPostProcessors()
+aacbf ->aabpp ++:applyMergedBeanDefinitionPostProcessors()
+aabpp ->aabpp ++:findInjectionMetadata()
+aabpp ->aabpp ++: findAutowiringMetadata()
+note right aabpp
+ findAutowiringMetadata结束后会把InjectionMetadata放入缓存中
+end note
+aabpp ->aabpp ++: buildAutowiringMetadata()
+aabpp ->rutils ++:doWithLocalFields()
+note right of rutils
+    通过反射查询带有 @Autowired 等注解的字段,找到后掉用回调
+    创建AutowiredFieldElement 放入currElements中
+end note
 return 
-aac-> aac ++:destroyBeans()
-aac->dlbf ++:destroySingletons()
-dlbf->dsbr ++:destroySingletons()
-return
-dlbf->dlbf ++:destroySingleton()
-dlbf->dsbr ++:destroySingleton()
-dsbr->dsbr ++:removeSingleton()
-dsbr->dsbr ++: destroyBean()
-dsbr->dba ++: destroy()
-dba->idabp ++: postProcessBeforeDestruction()
-note left of idabp
-    这里调用 Bean @PreDestroy 指定的方法 方法
+aabpp ->rutils ++:doWithLocalMethods()
+note right of rutils
+    通过反射查询带有 @Autowired 等注解的方法,找到后掉用回调
+    创建AutowiredMethodElement 放入currElements中
 end note
-return
-dba->db ++:destroy()
-note over of db
-    这里调用 DisposableBean 指定得 destory 方法
+return 
+aabpp ->imdata ++:forElements()
+note left of imdata
+    这里把所有命中的字段封装成一个对象返回
 end note
-return
-dba->dba ++:invokeCustomDestroyMethod()
-note over of dba
-    这里调用 自定义的 指定的 destory 方法
+return:InjectionMetadata
+deactivate aabpp
+deactivate aabpp
+deactivate aabpp
+return: InjectionMetadata
+
+aacbf->aacbf ++:populateBean()
+aacbf-> aabpp ++:postProcessProperties()
+note right aabpp
+这里是把InstantiationAwareBeanPostProcessor的实现类循环调用postProcessProperties方法
 end note
-dba--> dsbr
-deactivate dba
-deactivate dba
-dsbr-->dlbf
-deactivate dsbr
-deactivate dsbr
-deactivate dsbr
-dlbf->dlbf ++:updateManualSingletonNames()
-dlbf->dlbf ++:clearByTypeCache()
-dlbf --> aac
+aabpp -> aabpp ++:findAutowiringMetadata()
+aabpp -> imdata ++:inject()
+imdata -> ielement ++:inject()
+ielement -> ielement ++:resolveFieldValue()
+note right ielement
+这里开始就是依赖解决的逻辑了
+之后通过反射 设置自动装配字段的值
+ReflectionUtils.makeAccessible(field);
+field.set(bean, value);
+end note
+deactivate ielement
+return
+return
+deactivate aabpp
+return
+note right aacbf
+ 这里是属性类型转换的活
+end note
+aacbf -> aacbf ++:applyPropertyValues()
+deactivate aacbf
+deactivate aacbf
+aacbf -> aacbf ++:initializeBean()
+deactivate aacbf
+aacbf -> aacbf ++: registerDisposableBeanIfNecessary()
+deactivate aacbf
+deactivate aacbf
+deactivate aacbf
+deactivate aacbf
+return:Object
+return:Object
+return:Object
+abf -> aacbf ++:getObjectForBeanInstance()
+return Object
+deactivate abf
+return Object
 deactivate dlbf
-deactivate dlbf
-deactivate dlbf
-
-aac->aac ++: closeBeanFactory()
-aac->aac ++: onClose()
-
-
-deactivate aac
-deactivate aac
-deactivate aac
-deactivate aac
-deactivate aac
-deactivate aac
-deactivate aac
-destroy aac
-
 @enduml

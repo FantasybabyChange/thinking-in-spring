@@ -1,0 +1,66 @@
+@startuml AutowiredAnnotationBeanPostProcessor class
+title AutowiredAnnotationBeanPostProcessor
+ note left of  AutowiredAnnotationBeanPostProcessor : 处理 @Autowired @Value @Inject等注解的属性
+
+interface BeanPostProcessor {
+  +Object postProcessBeforeInitialization();
+  +Object postProcessAfterInitialization();
+}
+
+interface InstantiationAwareBeanPostProcessor{
+	+Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName);
+	+boolean postProcessAfterInstantiation(Object bean, String beanName);
+	+PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName);
+}
+
+interface SmartInstantiationAwareBeanPostProcessor{
+	 + Class<?> predictBeanType(Class<?> beanClass, String beanName) ;
+	 + Class<?> determineBeanType(Class<?> beanClass, String beanName);
+	 +Constructor<?>[] determineCandidateConstructors(Class<?> beanClass, String beanName);
+	 +Object getEarlyBeanReference(Object bean, String beanName);
+}
+
+interface MergedBeanDefinitionPostProcessor{
+	+void postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName);
+	+void resetBeanDefinition(String beanName);
+}
+class AutowiredAnnotationBeanPostProcessor{
+	-Set<Class<? extends Annotation>> autowiredAnnotationTypes;
+	-Map<String, InjectionMetadata> injectionMetadataCache;
+	-InjectionMetadata buildAutowiringMetadata(Class<?> clazz);
+	-InjectionMetadata findAutowiringMetadata(String beanName, Class<?> clazz, @Nullable PropertyValues pvs);
+	#protected void inject(Object bean, @Nullable String beanName, @Nullable PropertyValues pvs)
+	+postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName);
+
+}
+
+abstract class InjectedElement{
+	#Member member;
+	#boolean isField;
+	#PropertyDescriptor pd;
+	#void inject(Object bean, @Nullable String beanName, @Nullable PropertyValues pvs) ;
+	#Object resolveFieldValue(Field field, Object bean, @Nullable String beanName);
+}
+
+class AutowiredElement{
+	#final boolean required;
+}
+
+class AutowiredFieldElement{
+	#void inject(Object bean, @Nullable String beanName, @Nullable PropertyValues pvs) ;
+	#Object resolveFieldValue(Field field, Object bean, @Nullable String beanName);
+}
+class AutowiredMethodElement{
+#void inject(Object bean, @Nullable String beanName, @Nullable PropertyValues pvs) ;
+	#Object resolveFieldValue(Field field, Object bean, @Nullable String beanName);
+}
+BeanPostProcessor <|-- InstantiationAwareBeanPostProcessor
+BeanPostProcessor <|-- MergedBeanDefinitionPostProcessor
+InstantiationAwareBeanPostProcessor <|-- SmartInstantiationAwareBeanPostProcessor
+SmartInstantiationAwareBeanPostProcessor <|.. AutowiredAnnotationBeanPostProcessor
+MergedBeanDefinitionPostProcessor <|.. AutowiredAnnotationBeanPostProcessor
+InjectedElement <|-- AutowiredElement
+AutowiredElement <|.. AutowiredFieldElement
+AutowiredElement <|.. AutowiredMethodElement
+
+@enduml

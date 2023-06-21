@@ -13,7 +13,7 @@
     </bean>
 
     <bean id="user2" name="user2" class="com.fantasybaby.spring.ioc.overview.model.VipUser" parent="user" primary="true">
-        <property name="age" value="32"/>
+<!--        <property name="age" value="32"/>-->
         <property name="name" value="chuanGod"/>
         <property name="pay" value="2200"/>
     </bean>
