@@ -1,7 +1,6 @@
 ## **自动绑定**
 ### **简介**
 [自动绑定概念](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-autowire)  
-Autowired[官方使用文档](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation)  
 Spring容器可以在合作的Bean之间自动绑定关系. 可以通过检查 ApplicationContext的内容来让Spring决定合作的bean(其他bean).  
 自动绑定的优势:
 1. 自动绑定可以显著的减少需要指定的配置或者构造器参数.

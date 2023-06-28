@@ -42,7 +42,9 @@
   * Collection：List、Set（SortedSet、NavigableSet、EnumSet）
   * Map：Properties
 ## **使用注解依赖注入**
-使用[@Autowired](springDI/%40Autowired.md) JSR 330的 @Inject, 以及 @Value @Resource 这些注解都会被[BeanPostProcessor ](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/BeanPostProcessor.java)处理
+使用[@Autowired](springDI/%40Autowired.md) JSR 330的 @Inject, 以及 @Value [@Resource](springDI/%40Resource.md) 这些注解都会被[BeanPostProcessor ](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/BeanPostProcessor.java)处理
+### **自定义依赖注入注解**
+
 ### **依赖注入限定**
 * **@Primary**  
 在一些情况下,我们有自动装配时有多个候选Bean，这个时候通常需要控制选择过程.通过使用 [@Primary](https://github.com/spring-projects/spring-framework/blob/main/spring-context/src/main/java/org/springframework/context/annotation/Primary.java)注解来表明标注的Bean是需要有限考虑的  
