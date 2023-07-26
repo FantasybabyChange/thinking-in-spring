@@ -19,9 +19,9 @@ System.out.println("beanFactory和注入的context 是否相等 "+(userRepositor
 * 方法注入
 * 接口回调注入  
 
-**问题4**  
+**问题4** 
 你偏好构造器注入还是 Setter 注入？  
 两种依赖注入的方式均可使用，如果是必须依赖的话，那么推荐使用构
-造器注入，Setter 注入用于可选依赖。
+造器注入，Setter 注入用于可选依赖。  
 **问题5**    
 Spring 依赖注入的来源有哪些?

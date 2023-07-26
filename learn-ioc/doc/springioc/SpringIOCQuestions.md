@@ -10,7 +10,7 @@ beanFactory为什么和注入的context是相同的
 ```java
 System.out.println("beanFactory和注入的context 是否相等 "+(userRepository.getApplicationContextObjectFactory().getObject() == beanFactory));
 ```
-上面的问题参考在 [Springioc容器解释](../doc/SpringWithIoC.md)
+上面的问题参考在 [Springioc容器解释](../SpringWithIoC.md)
 依赖注入和依赖查找的bean不相同  beanFactory为context   di中的对象为组合的对象
 Application继承关系
 ConfigurableApplicationContext <- ApplicationContext <- BeanFactory  

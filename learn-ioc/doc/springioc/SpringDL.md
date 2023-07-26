@@ -2,7 +2,7 @@
 ## **Spring依赖查找概览**
 ## **Spring依赖查找**
   1. 相关[代码实例]([/ioc-container-overview](https://github.com/FantasybabyChange/thinking-in-spring/blob/main/learn-ioc/ioc-container-overview/src/main/java/com/fantasybaby/spring/ioc/overview/SpringIocLookUp.java))  
-  2. [依赖查找面试题](SpringDLQuestions.md)
+  2. [依赖查找面试题](springDL/SpringDLQuestions.md)
 * 根据 Bean 名称查找
   * 实时查找  通过 beanFactory.getBean
   * 延迟查找  通过 objectFactory.getObject()
