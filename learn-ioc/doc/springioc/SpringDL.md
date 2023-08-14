@@ -16,6 +16,9 @@
   * 集合 Bean 对象  
 
 ## **Spring依赖查找类型**  
+BeanFactory有两个实现类   
+1. AbstractBeanFactory  通用的通过名称获取Bean会用这个抽象类的实现方法
+2. DefaultListableBeanFactory   通过类型获取Bean 还有依赖解决的能力
 ### **1. 单一类型依赖查找接口**
 通过[BeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/BeanFactory.java)来查找单一类型的Bean
    * 根据 Bean 名称查找

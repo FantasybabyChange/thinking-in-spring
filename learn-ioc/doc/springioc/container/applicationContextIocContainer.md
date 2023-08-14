@@ -1,7 +1,7 @@
 ## **ApplicationContext作为IOC容器**
 ### 容器生命周期
 ### **启动**  
-![流程图](../pics/svg/APPLICAIONCONTEXT-START-WORKFLOW.svg)
+![流程图](../pics/svg/../../../pics/svg/APPLICAIONCONTEXT-START-WORKFLOW.svg)
 
 ### **运行**
 ### **停止**
