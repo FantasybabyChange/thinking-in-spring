@@ -16,6 +16,7 @@
         <module>ioc-container-overview</module>
         <module>ioc-dependency-lookup</module>
         <module>ioc-dependency-inject</module>
+        <module>ioc-dependency-sources</module>
     </modules>
     <dependencies>
         
