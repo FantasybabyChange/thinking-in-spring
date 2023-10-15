@@ -1,4 +1,6 @@
 # **Spring依赖来源**
+Spring管理对象:  通过SpringIoc容器管理的对象
+Spring游离对象: 非Spring容器管理的对象
 ## **1.依赖查找来源**
 |来源|配置元数据|
 |----|----|
@@ -37,3 +39,19 @@ Spring内建的BeanDefinition和Spring内建的单例,具体的Bean内容再 [Sp
 		beanFactory.registerResolvableDependency(ApplicationEventPublisher.class, this);
 		beanFactory.registerResolvableDependency(ApplicationContext.class, this);
 ```
+
+## **3. 依赖查找和注入来源的区别**
+* Spring BeanDefinition: 是托管型Spring Bean的元数据
+* 单体(singletonObjects) 注册的是外部已经注册的对象,已经初始化过的java对象,Spring容器中唯一.
+* ResoveableDependency 主要是Spring内部对象,不需要重复创建
+
+|来源|Spring Bean对象|生命周期管理|配置元信息|使用场景|
+|-----|-----|-----|-----|-----|
+|Spring BeanDefinition|是|是| 有| 依赖查找、依赖|
+|单体对象|是|否|无|依赖查找、依赖注入|
+|Resolvable Dependency|否|否|无 |依赖注入|
+  
+### **3.1 Spring BeanDefinition**
+ [BeanDefintion 内容](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
+ [BeanDefintion 注册](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)的实现
+### **3.2 单体对象的注册**

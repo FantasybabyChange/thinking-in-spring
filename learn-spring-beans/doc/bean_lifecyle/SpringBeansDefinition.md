@@ -5,6 +5,7 @@
 * Bean 行为配置元素，如作用域、自动绑定的模式，生命周期回调等
 * 其他 Bean 引用，又可称作合作者（collaborators）或者依赖（dependencies）
 * 配置设置，比如 Bean
+* 类型： 延迟和非延迟
 ### **BeanDefinition元信息**
 | 属性(Property)| 说明 |
 |--- | --- |
