@@ -16,9 +16,13 @@
   * 集合 Bean 对象  
 
 ## **Spring依赖查找类型**  
-BeanFactory有两个实现类   
+BeanFactory的实现接口或者类   
 1. AbstractBeanFactory  通用的通过名称获取Bean会用这个抽象类的实现方法
 2. DefaultListableBeanFactory   通过类型获取Bean 还有依赖解决的能力
+3. HierarchicalBeanFactory 子容器可以查询父容器
+4. ConfigurableListableBeanFactory 接口基于BeanFactory扩展了一些配置项,主要包含了父容器、类加载、元数据缓存开关、处理和加载Bean细节方法、处理Bean后处理器、注册范围等等一系列配置项。
+5. ConfigurableListableBeanFactory 它继承了ListableBeanFactory， AutowireCapableBeanFactory,，ConfigurableBeanFactory三个接口，同时提供忽律自动配置的方法、注册可分解依赖的方法、判断指定Bean是否有资格作为自动装配候选资格的方法、根据bean名称返回BeanDefinition的方法、冻结所有Bean配置相关方法、使所有非延迟加载的单例类都实例化方法。
+
 ### **1. 单一类型依赖查找接口**
 通过[BeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/BeanFactory.java)来查找单一类型的Bean
    * 根据 Bean 名称查找

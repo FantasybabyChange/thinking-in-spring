@@ -21,7 +21,7 @@ Spring Bean有以下几种注册方式
      * Java API 配置元信息
      * SingletonBeanRegistry#registerSingleton
 
-### **注册的基本实现**
+### **BeanDefinition注册的基本实现**
 通过[BeanDefinitionRegistry#registerBeanDefinition](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistry.java)实现
 
 这个方法的最终都是调用DefaultListableBeanFactory#registerBeanDefinition 下面理一下这个逻辑.

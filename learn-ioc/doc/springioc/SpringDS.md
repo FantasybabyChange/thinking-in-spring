@@ -1,6 +1,6 @@
 # **Spring依赖来源**
-Spring管理对象:  通过SpringIoc容器管理的对象
-Spring游离对象: 非Spring容器管理的对象
+[SpringBean的分类](../../../learn-spring-beans/doc/SpringBeans.md)
+
 ## **1.依赖查找来源**
 |来源|配置元数据|
 |----|----|
@@ -56,3 +56,9 @@ Spring内建的BeanDefinition和Spring内建的单例,具体的Bean内容再 [Sp
  [BeanDefintion 注册](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)的实现
 ### **3.2 单体对象的注册**
 [单体对象](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeanSingleton.md)  
+### **3.3 非Spring容器管理对象作为依赖来源**
+[非Spring容器管理依赖来源](../../../learn-spring-beans/doc/bean_lifecyle/NoSpringBeanRegister.md)  
+限制
+• 无生命周期管理
+• 无法实现延迟初始化 Bean
+• 无法通过依赖查找

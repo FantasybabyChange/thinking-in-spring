@@ -1,7 +1,7 @@
 # **Spring Beans Overview**
 ## **Bean的概念**
- **非Bean**: 非Spring 管理的bean.  
-
+    Spring管理对象:  通过SpringIoc容器管理的对象
+    Spring游离对象: 非Spring容器管理的对象
 ## **Bean的生命周期**
 ### **Spring Bean的命名**
 [Spring bean Naming](../doc/bean_lifecyle/SpringBeanNaming.md)
