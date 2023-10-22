@@ -52,6 +52,7 @@ Spring内建的BeanDefinition和Spring内建的单例,具体的Bean内容再 [Sp
 |Resolvable Dependency|否|否|无 |依赖注入|
   
 ### **3.1 Spring BeanDefinition**
- [BeanDefintion 内容](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)
+ [BeanDefintion 内容](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansDefinition.md)  
  [BeanDefintion 注册](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)的实现
 ### **3.2 单体对象的注册**
+[单体对象](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeanSingleton.md)  

@@ -33,3 +33,4 @@ jdk:17
    3. [Spring bean的创建](/learn-spring-beans/doc/bean_lifecyle/SpringBeansCreateAndRegister.md)
    4. [Spring bean的实例化](/learn-spring-beans/doc/bean_lifecyle/SpringBeansInstantiation.md)
    5. [Spring bean的销毁](/learn-spring-beans/doc/bean_lifecyle/SpringBeansDestory.md)
+   6. [Spring单例Bean](/learn-spring-beans/doc/bean_lifecyle/SpringBeanSingleton.md)
