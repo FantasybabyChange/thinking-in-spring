@@ -58,7 +58,6 @@ Spring内建的BeanDefinition和Spring内建的单例,具体的Bean内容再 [Sp
 [单体对象](../../../learn-spring-beans/doc/bean_lifecyle/SpringBeanSingleton.md)  
 ### **3.3 非Spring容器管理对象作为依赖来源**
 [非Spring容器管理依赖来源](../../../learn-spring-beans/doc/bean_lifecyle/NoSpringBeanRegister.md)  
-限制
-• 无生命周期管理
-• 无法实现延迟初始化 Bean
-• 无法通过依赖查找
+
+### **3.4 外部化配置作为依赖来源**
+[通过外部配置注入](springDI/@Value.md)  

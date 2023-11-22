@@ -5,4 +5,4 @@
 * 无法实现延迟初始化 Bean
 * 无法通过依赖查找
 ## **注册方法**
-ConfigurableListableBeanFactory[https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java]#registerResolvableDependency
+[ConfigurableListableBeanFactory](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java)#registerResolvableDependency

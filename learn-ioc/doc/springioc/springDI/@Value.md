@@ -1,0 +1,2 @@
+## **使用@Value注入**
+@Value和@Autowired都是通过[AutowiredAnnotationBeanPostProcessor](https://github.com/spring-projects/spring-framework/blob/main/spring-beans/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java)加载进入processor中
