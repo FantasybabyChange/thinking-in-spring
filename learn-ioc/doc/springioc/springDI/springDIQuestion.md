@@ -25,3 +25,4 @@ System.out.println("beanFactory和注入的context 是否相等 "+(userRepositor
 造器注入，Setter 注入用于可选依赖。  
 **问题5**    
 Spring 依赖注入的来源有哪些?
+[依赖注入来源](../SpringDSQuestions.md)
