@@ -12,5 +12,5 @@
 Object value = getAutowireCandidateResolver().getSuggestedValue(descriptor);
 ```
  当前value为${placeholder}  
- 2. 方法resolveEmbeddedValue()  使用 embeddedValueResolvers()方法找到对应的reslover来解析当前占位符.
- 3.  **StringValueResolver**的一个回调函数实现  PropertyPlaceholderHelper#parseStringValue()
+ 2. 方法resolveEmbeddedValue()  使用 embeddedValueResolvers()方法找到对应的reslover来解析当前占位符.  
+ 3. **StringValueResolver**的一个回调函数实现  PropertyPlaceholderHelper#parseStringValue()
