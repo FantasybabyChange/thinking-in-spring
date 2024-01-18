@@ -1,4 +1,5 @@
 # **非Spring容器管理的对象**
+ResolvableDependecy:非Spring容器管理的对象
 ## **非常规的Spring对象依赖来源**
 **限制**  
 * 无生命周期管理
