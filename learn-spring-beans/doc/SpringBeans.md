@@ -24,3 +24,6 @@ Bean 垃圾回收（GC）
  getObject: 会被容器调用  
  getObjectType:  获取对象类型,配合BeanDefinition的getBeanClassName 来用于类型判断.
  isSingleton: 是否是单例
+
+ ## **Bean的作用域**
+ [Spring Bean Scope](../doc/scope/springBeanScope.md)
