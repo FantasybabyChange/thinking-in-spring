@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-beans-overview</module>
+        <module>spring-beans-scope</module>
     </modules>
     <dependencyManagement>
         <dependencies>

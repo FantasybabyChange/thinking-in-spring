@@ -13,3 +13,6 @@
 
 ### singleton Bean作用域
 [singleton bean scope](./singletonBeanScope.md) 相关介绍
+
+### prototype Bean作用域
+[prototype bean scope](./prototypeBeanScope.md) 相关介绍

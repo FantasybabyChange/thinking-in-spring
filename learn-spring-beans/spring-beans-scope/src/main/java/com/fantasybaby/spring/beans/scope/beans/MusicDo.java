@@ -1,11 +1,11 @@
-package com.fantasybaby.spring.beans.overview.instantiation;
+package com.fantasybaby.spring.beans.scope.beans;
 
-/**
- * Created on 4/11/2023.
+/** test scope bean
+ * Created on 2024/2/22.
  *
  * @author Fantasy Baby
  */
-public class Music {
+public class MusicDo {
     private String name;
     private String type;
 
@@ -37,23 +37,10 @@ public class Music {
 
     @Override
     public String toString() {
-        return "Music{" +
+        return "MusicDo{" +
                 "name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", volume=" + volume +
                 '}';
-    }
-
-    /**
-     * 通过静态工厂创建类
-     *
-     * @return {@link Music}
-     */
-    public static Music createMusic() {
-        Music music = new Music();
-        music.setName("staticMethodMusic");
-        music.setType("pop");
-        music.setVolume(12);
-        return music;
     }
 }
