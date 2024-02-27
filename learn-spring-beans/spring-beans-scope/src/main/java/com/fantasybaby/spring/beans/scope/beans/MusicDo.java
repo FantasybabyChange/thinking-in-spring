@@ -1,11 +1,17 @@
 package com.fantasybaby.spring.beans.scope.beans;
 
-/** test scope bean
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.beans.factory.BeanNameAware;
+
+/**
+ * test scope bean
  * Created on 2024/2/22.
  *
  * @author Fantasy Baby
  */
-public class MusicDo {
+public class MusicDo implements BeanNameAware {
+    private String beanName;
     private String name;
     private String type;
 
@@ -42,5 +48,20 @@ public class MusicDo {
                 ", type='" + type + '\'' +
                 ", volume=" + volume +
                 '}';
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.printf("init bean %s \n", beanName);
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.printf("preDestroy bean %s \n", beanName);
+    }
+
+    @Override
+    public void setBeanName(String beanName) {
+        this.beanName = name;
     }
 }
