@@ -2,10 +2,12 @@ package com.fantasybaby.spring.beans.scope;
 
 import com.fantasybaby.spring.beans.scope.beans.MusicDo;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
@@ -20,7 +22,7 @@ import java.util.Random;
  *
  * @author Fantasy Baby
  */
-public class SingleAndPrototypeScopeDemo {
+public class SingleAndPrototypeScopeDemo implements DisposableBean {
     @Autowired
     @Qualifier("singleMusic")
     private MusicDo singleMusic;
@@ -39,6 +41,8 @@ public class SingleAndPrototypeScopeDemo {
     private MusicDo musicDo3;
     @Autowired
     private List<MusicDo> musicDos;
+    @Autowired
+    private ConfigurableListableBeanFactory beanFactory;
 
     /**
      * 在collection中 所有的bean都会存在,无论是single 还是protoType的Beans,但只会存在一个
@@ -143,6 +147,19 @@ public class SingleAndPrototypeScopeDemo {
         for (int i = 0; i < 10; i++) {
             MusicDo bean = annotationConfigApplicationContext.getBean("protoMusic", MusicDo.class);
             System.out.println("bean " + bean);
+        }
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        // 手动调用destory方法
+        musicDo1.preDestroy();
+        musicDos.forEach(MusicDo::preDestroy);
+        for (Map.Entry<String, MusicDo> entry : musicDoMap.entrySet()) {
+            String key = entry.getKey();
+            if (beanFactory.isPrototype(key)) {
+                entry.getValue().preDestroy();
+            }
         }
     }
 }
